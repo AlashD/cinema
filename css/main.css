@@ -53,6 +53,7 @@ body, p, h1, h2, h3, h3 {
     font-weight: 400;
     color: #fff;
     padding: 18px 0;
+    
 }
 .movie-list_table tr:nth-child(2n) {
     background: #373737;
@@ -64,6 +65,8 @@ body, p, h1, h2, h3, h3 {
     font-size: 14px;
     background: #fff;
     margin: 0 0 79px;
+    font-weight: 100;
+    padding-top: 39px
 }
 td:first-child {
     text-align: center;
@@ -81,4 +84,7 @@ td:first-child {
 }
 .icon-up:before {
     content: "\f10a";
+}
+.movie-list_left{
+    text-align:left;
 }
