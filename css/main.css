@@ -1,0 +1,84 @@
+body, p, h1, h2, h3, h3 {
+    backgroung: transparent;
+    border: 0;
+    margin: 0;
+    outline: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif; 
+}
+
+@font-face{
+    font-family: 'Roboto';
+    src: url('https://fonts.google.com/specimen/Roboto') format('truetype');
+    font-weight: 400;
+}
+@font-face{
+    font-family: 'Roboto';
+    src: url('../fonts/Roboto-Bold.ttf') format('truetype');
+    font-weight: 700;
+}
+.movie-list {
+    padding: 100px 0;
+    
+}
+.movie-list_header{
+    font-size: 50px;
+    color: #252525;
+    font-weight: 700;
+    margin: 0 0 79px;
+    text-align: center;
+}
+
+.container{
+    max-width: 1030px;
+    margin: 0 auto;
+}
+.movie-list_table{
+    width: 100%;
+    border-collapse: collapse;
+    border-radius: 15px;
+    overflow: hidden;
+}
+.movie-list_table th{
+    font-size: 30px;
+    font-weight: 700;
+    color: #fff;
+    background: #a3cc40;
+    padding: 18px 0;
+}
+.movie-list_td td{
+    font-size: 22px;
+    font-weight: 400;
+    color: #fff;
+    padding: 18px 0;
+}
+.movie-list_table tr:nth-child(2n) {
+    background: #373737;
+}
+.movie-list_table tr {
+    background: #4b4d4f;
+}
+.foot td{
+    font-size: 14px;
+    background: #fff;
+    margin: 0 0 79px;
+}
+td:first-child {
+    text-align: center;
+}
+.icon-down:before {
+    content: "\f10a";
+}
+.icon:before {
+    font-family: fico;
+    font-weight: normal !important;
+    font-style: normal !important;
+    text-transform: none !important;
+    vertical-align: baseline;
+    -webkit-font-smoothing: antialiased;
+}
+.icon-up:before {
+    content: "\f10a";
+}

@@ -3,36 +3,53 @@
 
 <head>
         <meta charset="utf-8">
+        <title>Кинотеатр Иннополис</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta name="description" content="">
+        <meta name="description" content="Расписание фильмов в кинотеатре">
         <meta name="author" content="">
-        <title>Webpack Boilerplate</title>
         <link rel="icon" type="image/png" href="images/favicon.png" />
-        <link rel="stylesheet" type="text/css" href="build/style.css" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/media.css">
+        <link rel="stylesheet" href="css/icons.css">
+
 </head>
 
 <body>
+        <header style="background-color: grey">
+                <a href="https://university.innopolis.ru/" target="_blank" title="Иннополис">
+                        <img alt="Университет Иннополис" src="images/logo.png" title="Логотип Университета Иннополис" />
+                </a>
+                <nav>
+                        <ul>
+                                <li>
+                                        <a href="#buy">Заказать билет</a>
+                                </li>
+                                <li>
+                                        <a href="#advantages">Преимущества</a>
+                                </li>
+                                <li>
+                                        <a href="#movies">Фильмы</a>
+                                </li>
+                                <li>
+                                        <a href="#contacts">Контакты</a>
+                                </li>
+                        </ul>
+                </nav>
+                <sub>Ваш город:</sub>
+                <u>Москва</u>
+        </header>
+        <div>
+                <img width="400" src="img/top_bg.jpg" alt="Кинотеатр" title="Кинотеатр" />
+        </div>
 
-        <section style="background-image: url(images/top_bg.jpg)">
+        <div>
+                <h1>Закажите билет в кино</h1>
                 <div>
-                        <nav>
-                                <a href="https://university.innopolis.ru/" target="_blank" title="Иннополис">
-                                        <img alt="Innopolis University" src="images/logo.png"
-                                                title="Логотип Университета Иннополис" />
-                                </a>
-                                <span style="color: white">Заказать билет</span>
-                                <span style="color: white">Преимущества</span>
-                                <span style="color: white">Фильмы</span>
-                                <span style="color: white">Контакты</span>
-                                <span style="color: white">Ваш город: <u>Москва</u></span>
-                        </nav>
+                        Всем покупателям подарок!
                 </div>
+        </div>
 
-                <div>
-                        <h1><span style="color: white">Закажите билет в кино</span></h1>
-                        <span style="color: white">Всем покупателям подарок!</span>
-                </div>
-        </section>
 
 
         <section>
@@ -47,98 +64,134 @@
                                 perferendis quibusdam quis reprehenderit, saepe! Debitis enim optio saepe voluptatibus.
                         </p>
                 </div>
-
-                <h2>
-                        Почему мы?
-                </h2>
-
-
-                <div>
-                        <div>
-                                <img src="images/b2_icon_1.jpg" alt="Большие экраны" title="Широкие экраны">
-                                <h2>Большие экраны</h2>
-
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. At autem cum dolores dolorum
-                                eius
-                                error expedita illum itaque molestiae mollitia nemo, nostrum officia quas ratione
-                                tempora
-                                temporibus veritatis vero voluptates.
-
-                        </div>
-
-                        <div>
-                                <img src="images/b2_icon_2.jpg" alt="Объемный звук" title="Объемное звучание" />
-                                <h2>Объемный звук</h2>
-
-                                Lorem ipsum dolor sit amet.
-                        </div>
-
-                        <div>
-                                <img src="images/b2_icon_3.jpg" alt="Удобные кресла" title="Уютные места" />
-                                <h2>Удобные кресла</h2>
-
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. At autem cum dolores dolorum
-                                eius
-                                error expedita illum itaque molestiae mollitia nemo, nostrum officia quas ratione
-                                tempora
-                                temporibus veritatis vero voluptates.
-                        </div>
-
-                </div>
         </section>
+        <section id="advanteges">
+                <h2>Почему мы?</h2>
+                <section>
+                        <a src="images/b2_icon_1.jpg" alt="Большие экраны" title="Широкие экраны">
+                                <h3>Большие экраны</h3>
+                                <p>
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. At autem cum dolores
+                                        dolorum
+                                        eius
+                                        error expedita illum itaque molestiae mollitia nemo, nostrum officia quas
+                                        ratione
+                                        tempora
+                                        temporibus veritatis vero voluptates.
+                                </p>
+                </section>
+                <section>
+                        <img src="images/b2_icon_2.jpg" alt="Объемный звук" title="Объемное звучание" />
+                        <h3>Объемный звук</h3>
+                        <p>
+                                Lorem ipsum dolor sit amet.
+                        </p>
+                </section>
+                <section>
+                        <img src="images/b2_icon_3.jpg" alt="Удобные кресла" title="Уютные места" />
+                        <h3>Удобные кресла</h3>
+                        <p>
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. At autem cum dolores
+                                dolorum
+                                eius
+                                error expedita illum itaque molestiae mollitia nemo, nostrum officia quas
+                                ratione
+                                tempora
+                                temporibus veritatis vero voluptates.
+                        </p>
+                </section>
+
+        </section>
+
         <br>
         <section>
-                <h2>Выберите фильм</h2>
-
-                <table>
-                        <tr>
-                                <td>Начало сеанса</td>
-                                <td>Название фильма</td>
-                                <td>Жанр</td>
-                        </tr>
-                        <tr>
-                                <td>10:00</td>
-                                <td><a href="https://www.kinopoisk.ru/level/1/film/838/sr/1/" target="_blank"
-                                                title="Кинопоиск">Человек-паук</img></td>
-                                <td>фантастика, боевик, приключения</td>
-                        </tr>
-                        <tr>
-                                <td>12:00</td>
-                                <td><a href="https://www.kinopoisk.ru/level/1/film/1122114/sr/1/" target="_blank"
-                                                title="Кинопоиск">Собачья жизнь 2</a></td>
-                                <td>фэнтези, драма, комедия</td>
-                        </tr>
-                        <tr>
-                                <td>14:00</td>
-                                <td><a href="https://www.kinopoisk.ru/level/1/film/846824/sr/1/" target="_blank"
-                                                title="Кинопоиск">История
-                                                игрушек 4</a></td>
-                                <td>мультфильм, фэнтези, комедия</td>
-                        </tr>
-                        <tr>
-                                <td>16:00</td>
-                                <td><a href="https://www.kinopoisk.ru/level/1/film/693730/sr/1/" target="_blank"
-                                                title="Кинопоиск">Люди в
-                                                черном: Интернэшнл</a></td>
-                                <td>фантастика, боевик, комедия</td>
-                        </tr>
-                </table>
-
-
-                <p>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid eum facere obcaecati quam rem
-                        repellendus
-                        veritatis. Aliquam beatae, delectus dignissimos enim exercitationem mollitia nisi pariatur
-                        quaerat quam, qui
-                        quibusdam sunt!
-                </p>
+                <div class="movie-list">
+                        <a name="buy"></a>
+                        <h2 class="movie-list_header">Выберите фильм</h2>
+                        <div class="container">
+                                <table class="movie-list_table">
+                                        <thead>
+                                                <tr>
+                                                        <th><a href="#">Time</a><i class="icon icon-up"></i>
+                                                        </th>
+                                                        <th><a href="#">Stuff that will happen</a><i class="icon icon-down"></i></th>
+                                                        <th><a href="#"></a></th>
+                                                </tr>
+                                        </thead>
+                                        <tfoot class="foot">
+                                                <tr>
+                                                        <td colspan="3">
+                                                                Lorem ipsum dolor sit amet, consectetur adipisicing
+                                                                elit.
+                                                                Aliquid eum
+                                                                facere obcaecati quam rem
+                                                                repellendus
+                                                                veritatis. Aliquam beatae, delectus dignissimos enim
+                                                                exercitationem
+                                                                mollitia nisi pariatur
+                                                                quaerat quam, qui
+                                                                quibusdam sunt!
+                                                        </td>
+                                                </tr>
+                                        </tfoot>
+                                        <tbody class="movie-list_td">
+                                                <tr>
+                                                        <td>10am - 12pm</td>
+                                                        <td>Introduction and presentations about Envato
+                                                        </td>
+                                                        <td><a><svg xmlns="http://www.w3.org/2000/svg"
+                                                                                xmlns:xlink="http://www.w3.org/1999/xlink"
+                                                                                width="33px" height="33px">
+                                                                                <path fill-rule="evenodd"
+                                                                                        fill="rgb(255, 255, 255)"
+                                                                                        d="M16.505,32.994 C7.393,32.994 0.005,25.607 0.005,16.494 C0.005,7.381 7.393,-0.006 16.505,-0.006 C25.618,-0.006 33.005,7.381 33.005,16.494 C33.005,25.607 25.618,32.994 16.505,32.994 ZM24.214,14.591 L18.356,14.631 L18.356,8.796 L13.958,8.777 L13.958,14.637 L8.083,14.637 L8.083,19.074 L13.958,19.074 L13.958,24.889 L18.336,24.889 L18.307,19.074 L24.231,19.074 L24.214,14.591 Z" />
+                                                                        </svg></a>
+                                                        </td>
+                                                </tr>
+                                                <tr>
+                                                        <td>12pm - 02pm</td>
+                                                        <td>Sessions by honorable guests and Speakers
+                                                        </td>
+                                                        <td><a><svg xmlns="http://www.w3.org/2000/svg"
+                                                                                xmlns:xlink="http://www.w3.org/1999/xlink"
+                                                                                width="33px" height="34px">
+                                                                                <path fill-rule="evenodd"
+                                                                                        fill="rgb(255, 255, 255)"
+                                                                                        d="M16.505,33.210 C7.393,33.210 0.005,25.823 0.005,16.710 C0.005,7.597 7.393,0.210 16.505,0.210 C25.618,0.210 33.005,7.597 33.005,16.710 C33.005,25.823 25.618,33.210 16.505,33.210 ZM24.214,14.807 L18.356,14.847 L18.356,9.012 L13.958,8.994 L13.958,14.853 L8.083,14.853 L8.083,19.291 L13.958,19.291 L13.958,25.105 L18.336,25.105 L18.307,19.291 L24.231,19.291 L24.214,14.807 Z" />
+                                                                        </svg></a></td>
+                                                </tr>
+                                                <tr>
+                                                        <td>02pm - 03pm</td>
+                                                        <td>Break and Mingle time with the authors</td>
+                                                        <td><a><svg xmlns="http://www.w3.org/2000/svg"
+                                                                                xmlns:xlink="http://www.w3.org/1999/xlink"
+                                                                                width="34px" height="34px">
+                                                                                <path fill-rule="evenodd"
+                                                                                        fill="rgb(255, 255, 255)"
+                                                                                        d="M16.613,33.102 C7.501,33.102 0.113,25.715 0.113,16.602 C0.113,7.489 7.501,0.102 16.613,0.102 C25.726,0.102 33.113,7.489 33.113,16.602 C33.113,25.715 25.726,33.102 16.613,33.102 ZM24.322,14.699 L18.464,14.738 L18.464,8.904 L14.066,8.886 L14.066,14.745 L8.191,14.745 L8.191,19.182 L14.066,19.182 L14.066,24.998 L18.444,24.998 L18.415,19.182 L24.339,19.182 L24.322,14.699 Z" />
+                                                                        </svg></a></td>
+                                                </tr>
+                                                <tr>
+                                                        <td>03pm - 05pm</td>
+                                                        <td>Portfolio Review, Rewards and Ending Presentation</td>
+                                                        <td> <a><svg xmlns="http://www.w3.org/2000/svg"
+                                                                                xmlns:xlink="http://www.w3.org/1999/xlink"
+                                                                                width="33px" height="33px">
+                                                                                <path fill-rule="evenodd"
+                                                                                        fill="rgb(255, 255, 255)"
+                                                                                        d="M16.505,32.994 C7.393,32.994 0.005,25.606 0.005,16.494 C0.005,7.381 7.393,-0.006 16.505,-0.006 C25.618,-0.006 33.005,7.381 33.005,16.494 C33.005,25.606 25.618,32.994 16.505,32.994 ZM24.214,14.591 L18.356,14.631 L18.356,8.796 L13.958,8.778 L13.958,14.637 L8.083,14.637 L8.083,19.074 L13.958,19.074 L13.958,24.889 L18.336,24.889 L18.307,19.074 L24.231,19.074 L24.214,14.591 Z" />
+                                                                        </svg></a></td>
+                                                </tr>
+                                        </tbody>
+                                </table>
+                        </div>
+                </div>
         </section>
-        <p>
+        <div>
                 <img src="images/b4_img.jpg" alt="Подарок" title="Дарим подарки">
-        </p>
-        <section style="background-image: url(image/b4_bg.jpg)">
-                <h2><span style="color: white">Подарок каждому!</span></h2>
-
+        </div>
+        <section>
+                <h2>Подарок каждому!</h2>
                 <p>
                         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab aperiam aspernatur, cum, cupiditate
                         excepturi
@@ -150,7 +203,6 @@
                         sequi sint,
                         tenetur unde velit veniam!
                 </p>
-
                 <p>
                         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab aperiam aspernatur, cum, cupiditate
                         excepturi
@@ -158,7 +210,6 @@
                         tenetur unde
                         velit veniam!
                 </p>
-
                 <p>
                         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab aperiam aspernatur, cum, cupiditate
                         excepturi
@@ -166,10 +217,11 @@
                         tenetur unde
                         velit veniam!
                 </p>
-
-                <a href="#">Получить подарок</a>
+                <button>
+                        <a href="#">Получить подарок</a>
+                </button>
         </section>
-        <section>
+        <section id="movies">
                 <h2>Фильмы</h2>
 
                 <p>
@@ -241,17 +293,97 @@
 
         </section>
 
-        <footer>
-                Имя*
+        <footer id="contacts">
+                <div>
+                        <a href="https://www.facebook.com/" title="facebook" target="_blank">
+                                facebook
+                        </a>
+                        <a href="https://twitter.com/" title="twitter" target="_blank">
+                                twitter
+                        </a>
 
-                Выбор1
-                Выбор2
-                Комментарий
-                Я согласен на обработку персональных данных
+                        <a href="https://instagram.com" title="instagram" target="_blank">
+                                instagram
+                        </a>
+                        <a href="https://www.google.com/intl/ru/gmail/about/#" title="gmail" target="_blank">
+                                gmail
+                        </a>
+                        <a href="#" title="t" target="_blank">
+                                t
+                        </a>
 
-                Загрузить файл
-                Отправить
+                </div>
         </footer>
+        <form action="/order.php">
+
+                <div>
+                        <label>Ваше имя</label>
+
+                        <input placeholder="Имя*" required aria-required="true" />
+                </div>
+
+                <div>
+                        <lable>
+                                Введите ваш e-mail
+                        </lable>
+                        <input placeholder="e-mail*" required aria-required="true" />
+                </div>
+                <div>
+                        <select>
+                                <option value="1">Место 1</option>
+                                <option value="2">Место 2</option>
+                                <option value="3">Место 3</option>
+                                <option value="4">Место 4</option>
+                                <option value="5">Место 5</option>
+                                <option value="6">Место 6</option>
+                                <option value="7">Место 7</option>
+                                <option value="8">Место 8</option>
+                                <option value="9">Место 9</option>
+                                <option value="10">Место 10</option>
+                        </select>
+                </div>
+                <div>
+                        <div>
+                                <label for="row1">
+                                        Ряд 1
+                                </label>
+                                <input id="row1" type="radio" name="row" value="1" />
+                        </div>
+
+                        <div>
+                                <label for="row2">
+                                        Ряд 2
+                                </label>
+                                <input id="row2" type="radio" name="row" value="2" />
+                        </div>
+
+                        <div>
+                                <label for="row3">
+                                        Ряд 3
+                                </label>
+                                <input id="row3" type="radio" name="row" value="3" />
+                        </div>
+                </div>
+
+                <div>
+
+                        <textarea placeholder="Введите ваш комментарий">
+                        </textarea>
+                </div>
+
+                <div>
+                        <input type="checkbox" required aria-required="true" />
+                        <label for="agreement">Согласие на обработку персональных данных</label>
+                </div>
+
+                <div>
+                        <label>Промо-купон:</label>
+
+                        <input type="file" name="promo" />
+                </div>
+                <input type="submit" value="Заказать билет" />
+
+        </form>
 </body>
 
 </html>
