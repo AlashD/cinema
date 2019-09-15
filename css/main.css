@@ -27,17 +27,19 @@ body, p, h1, h2, h3, h3 {
     font-size: 50px;
     color: #252525;
     font-weight: 700;
-    margin: 0 0 79px;
+    margin: 0 0 78px 20px;
     text-align: center;
 }
 
 .container{
     max-width: 1030px;
-    margin: 0 auto;
+    margin: 0 auto 0 170px;
 }
 .movie-list_table{
     width: 100%;
     border-collapse: collapse;
+}
+.movie-list_table thead{
     border-radius: 15px;
     overflow: hidden;
 }
@@ -56,10 +58,10 @@ body, p, h1, h2, h3, h3 {
     
 }
 .movie-list_table tr:nth-child(2n) {
-    background: #373737;
+    background: #4b4d4f;
 }
 .movie-list_table tr {
-    background: #4b4d4f;
+    background: #373737;
 }
 .foot td{
     font-size: 14px;
@@ -85,6 +87,38 @@ td:first-child {
 .icon-up:before {
     content: "\f10a";
 }
-.movie-list_left{
+td.movie-list_left{
     text-align:left;
+    padding-left: 80px;
+}
+th.th_left_top_th{
+    text-align:left;
+    padding-left: 80px;
+    width: 670px;
+}
+.th_left_top {
+    overflow: hidden;
+    border-radius: 15px 0 0 0;
+    width: 220px;
+} 
+
+.th_right_top {
+    overflow: hidden;
+    border-radius: 0 15px 0 0;
+    width: 80px;
+} 
+
+.tb_left_bottom {
+    overflow: hidden;
+    border-radius: 0 0 0 15px;
+}
+
+.tb_right_bottom {
+    overflow: hidden;
+    border-radius: 0 0 15px 0;
+
+}
+.movie-list_table thead a{
+    color: #fff;
+    text-decoration: none;
 }
