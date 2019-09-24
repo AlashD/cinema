@@ -1,4 +1,9 @@
-body, p, h1, h2, h3, h3 {
+body,
+p,
+h1,
+h2,
+h3,
+h3 {
     backgroung: transparent;
     border: 0;
     margin: 0;
@@ -6,56 +11,57 @@ body, p, h1, h2, h3, h3 {
     padding: 0;
     text-decoration: none;
     box-sizing: border-box;
-    font-family: "Roboto", sans-serif; 
+    font-family: "Roboto", sans-serif;
 }
-
-@font-face{
+@font-face {
     font-family: 'Roboto';
     src: url('https://fonts.google.com/specimen/Roboto') format('truetype');
     font-weight: 400;
 }
-@font-face{
-    font-family: 'Roboto';
-    src: url('../fonts/Roboto-Bold.ttf') format('truetype');
-    font-weight: 700;
-}
+
 .movie-list {
     padding: 100px 0;
-    
 }
-.movie-list_header{
+.movie-list_header {
     font-size: 50px;
     color: #252525;
     font-weight: 700;
-    margin: 0 0 78px 20px;
+    margin: 0 0 77px 20px;
     text-align: center;
 }
-
-.container{
+.container {
     max-width: 1030px;
     margin: 0 auto 0 170px;
 }
-.movie-list_table{
+.movie-list_table {
     width: 100%;
     border-collapse: collapse;
 }
-.movie-list_table thead{
+.movie-list_table thead {
     border-radius: 15px;
     overflow: hidden;
 }
-.movie-list_table th{
+.movie-list_table th {
     font-size: 30px;
-    font-weight: 700;
+    font-weight: 600;
     color: #fff;
     background: #a3cc40;
     padding: 18px 0;
+    text-align: center;
 }
-.movie-list_td td{
+.movie-list_table td {
+    padding: 12px 12px 12px 12px;
+}
+.movie-list_td td {
     font-size: 22px;
-    font-weight: 400;
+    font-weight: 300;
     color: #fff;
     padding: 18px 0;
-    
+    vertical-align: top;
+}
+.movie-list_td a{
+    color: white;
+    text-decoration: none;
 }
 .movie-list_table tr:nth-child(2n) {
     background: #4b4d4f;
@@ -63,15 +69,16 @@ body, p, h1, h2, h3, h3 {
 .movie-list_table tr {
     background: #373737;
 }
-.foot td{
+.foot td {
     font-size: 14px;
     background: #fff;
     margin: 0 0 79px;
     font-weight: 100;
-    padding-top: 39px
+    padding-top: 39px;
 }
 td:first-child {
     text-align: center;
+    vertical-align: top;
 }
 .icon-down:before {
     content: "\f10a";
@@ -87,38 +94,41 @@ td:first-child {
 .icon-up:before {
     content: "\f10a";
 }
-td.movie-list_left{
-    text-align:left;
+td.movie-list_left {
+    text-align: left;
     padding-left: 80px;
+    letter-spacing: 0.3px;
+    vertical-align: top;
+    width: 450px;
 }
-th.th_left_top_th{
-    text-align:left;
+th.th_name_top_th {
+    text-align: left;
     padding-left: 80px;
-    width: 670px;
+    width: 450px;
 }
-.th_left_top {
+th.th_genre_top_th{
+    width: 220px;
+}
+.th_time_top {
     overflow: hidden;
     border-radius: 15px 0 0 0;
-    width: 220px;
-} 
-
-.th_right_top {
+    width: 230px;
+}
+.th_icon_top {
     overflow: hidden;
     border-radius: 0 15px 0 0;
-    width: 80px;
-} 
-
+    width: 130px;
+}
 .tb_left_bottom {
     overflow: hidden;
     border-radius: 0 0 0 15px;
 }
-
 .tb_right_bottom {
     overflow: hidden;
     border-radius: 0 0 15px 0;
 
 }
-.movie-list_table thead a{
+.movie-list_table thead a {
     color: #fff;
     text-decoration: none;
 }
