@@ -1,3 +1,407 @@
+/* Reset CSS */
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0-модифицированный | 20110126
+   Лицензия: нет (общественное достояние)
+*/
+html , body , div , span , applet , object , iframe ,
+h1 , h2 , h3 , h4 , h5 , h6 , p , цитата , pre ,
+, сокр , акроним , адрес , большой , процитировать , код ,
+del , dfn , em , img , ins , kbd , q , s , samp ,
+маленький , ударный , сильный , саб , sup , tt , var ,
+б , ты , я , центр ,
+дл , дт , дд , ол , ул , ли ,
+fieldset , форма , метка , легенда ,
+таблица , заголовок , TBODY , TFOOT , THEAD , тр , е , тд ,
+статья , в стороне , холст , детали , вставка ,
+figure , figcaption , footer , header , hgroup ,
+меню , навигация , вывод , рубин , раздел , сводка ,
+время , отметка , аудио , видео {
+  поле : 0 ;
+	отступы : 0 ;
+	граница : 0 ;
+	размер шрифта : 100 % ;
+	шрифт : наследовать ;
+	выравнивание по вертикали : базовая линия ;
+}
+
+/ * не забудьте установить некоторые стили фокуса для доступности * /
+: focus {
+    контур : 0 ;
+}
+
+/ * Сброс роли отображения HTML5 для старых браузеров * /
+статья , в стороне , детали , figcaption , рисунок ,
+нижний колонтитул , заголовок , hgroup , меню , навигация , раздел {
+	дисплей : блок ;
+}
+
+тело {
+	высота строки : 1 ;
+}
+
+ol , ul {
+	стиль списка : нет ;
+}
+
+цитата , q {
+	цитаты : нет ;
+}
+
+blockquote : до , blockquote : до ,
+q : до , q : после {
+	содержание : ' ' ;
+	содержание : нет ;
+}
+
+таблица {
+	коллапс границы : коллапс ;
+	интервал границы : 0 ;
+}
+
+input [ type = search ] :: - webkit-search-cancel-button ,
+input [ type = search ] :: - webkit-search-украшение ,
+input [ type = search ] :: - webkit-search-results-button ,
+input [ type = search ] :: - webkit-search-results-украшение {
+    внешний вид : нет ;
+    -возможность появления : нет ;
+}
+
+input [ type = search ] {
+    внешний вид : нет ;
+    -возможность появления : нет ;
+    -webkit-box-sizing : content-box ;
+    -moz-box-sizing : content-box ;
+    размер блока : блок содержимого ;
+}
+
+textarea {
+    переполнение : авто ;
+    выравнивание по вертикали : верх ;
+    изменить размер : вертикальный ;
+}
+
+/ * *
+ * Правильное отображение inline-block не определено в IE 6/7/8/9 и Firefox 3.
+ * /
+
+аудио ,
+холст ,
+видео {
+    дисплей : встроенный блок ;
+    * дисплей : встроенный ;
+    * увеличение : 1 ;
+    максимальная ширина : 100 % ;
+}
+
+/ * *
+ * Запретить современным браузерам отображение `audio` без элементов управления.
+ * Убрать лишнюю высоту в устройствах iOS 5.
+ * /
+
+аудио : нет ([ контролирует ]) {
+    дисплей : нет ;
+    высота : 0 ;
+}
+
+/ * *
+ * Стиль адресации отсутствует в IE 7/8/9, Firefox 3 и Safari 4.
+ * Известная проблема: нет поддержки IE 6.
+ * /
+
+[ скрыто ] {
+    дисплей : нет ;
+}
+
+/ * *
+ * 1. Исправьте странное изменение размера текста в IE 6/7, когда тело `font-size` установлено с помощью
+ * `em` юниты.
+ * 2. Запретить изменение размера текста iOS после изменения ориентации, не отключая
+ * пользовательский зум.
+ * /
+
+html {
+    размер шрифта : 100 % ; / * 1 * /
+    -webkit-text-size-Adjust : 100 % ; / * 2 * /
+    -ms-text-size-Adjust : 100 % ; / * 2 * /
+}
+
+/ * *
+ * Устранить несоответствие `outline` между Chrome и другими браузерами.
+ * /
+
+a : focus {
+    контур : тонкий  пунктир ;
+}
+
+/ * *
+ * Улучшение читаемости, когда фокус, а также мышь зависла во всех браузерах.
+ * /
+
+а : активный ,
+a : hover {
+    контур : 0 ;
+}
+
+/ * *
+ * 1. Удалите границу внутри элемента `a` в IE 6/7/8/9 и Firefox 3.
+ * 2. Улучшение качества изображения при масштабировании в IE 7.
+ * /
+
+img {
+    граница : 0 ; / * 1 * /
+    -ms-interpolation-mode : бикубический; / * 2 * /
+}
+
+/ * *
+ * Запас адресов отсутствует в IE 6/7/8/9, Safari 5 и Opera 11.
+ * /
+
+число {
+    поле : 0 ;
+}
+
+/ * *
+ * Правильное поле отображается странным образом в IE 6/7.
+ * /
+
+форма {
+    поле : 0 ;
+}
+
+/ * *
+ * Определить согласованные границы, поля и отступы.
+ * /
+
+fieldset {
+    граница : 1 px  solid  # c0c0c0 ;
+    поле : 0  2 px ;
+    обивка : 0,35 EM  0,625 эм  0,75 эм ;
+}
+
+/ * *
+ * 1. Правильный цвет не наследуется в IE 6/7/8/9.
+ * 2. Правильный текст не переносится в Firefox 3.
+ * 3. Правильное выравнивание отображается странным образом в IE 6/7.
+ * /
+
+легенда {
+    граница : 0 ; / * 1 * /
+    отступы : 0 ;
+    пустое пространство : нормальное ; / * 2 * /
+    * поле слева : -7 пикселей ; / * 3 * /
+}
+
+/ * *
+ * 1. Правильный размер шрифта не наследуется во всех браузерах.
+ * 2. Поля адреса устанавливаются по-разному в IE 6/7, Firefox 3+, Safari 5,
+ * и хром.
+ * 3. Улучшение внешнего вида и согласованности во всех браузерах.
+ * /
+
+кнопка ,
+вход ,
+выберите ,
+textarea {
+    размер шрифта : 100 % ; / * 1 * /
+    поле : 0 ; / * 2 * /
+    выравнивание по вертикали : базовая линия ; / * 3 * /
+    * вертикальное выравнивание : среднее ; / * 3 * /
+}
+
+/ * *
+ * Адрес Firefox 3+, устанавливающий `line-height` на` input`, используя `! Important` в
+ * таблица стилей UA.
+ * /
+
+кнопка ,
+вход {
+    высота строки : нормальная ;
+}
+
+/ * *
+ * Адрес несовместимого наследования `text-transform` для` button` и `select`.
+ * Все остальные элементы управления формой не наследуют значения `text-transform`.
+ * Исправить наследование стиля `button` в Chrome, Safari 5+ и IE 6+.
+ * Исправить наследование стиля `select` в Firefox 4+ и Opera.
+ * /
+
+кнопка ,
+выберите {
+    преобразование текста : нет ;
+}
+
+/ * *
+ * 1. Избегайте ошибки WebKit в Android 4.0. * Где (2) уничтожает собственный `audio`
+ * и `video` управления.
+ * 2. Исправлена ​​невозможность стилизовать кликабельные `input` типы в iOS.
+ * 3. Улучшение удобства использования и согласованности стиля курсора между типом изображения
+ * `input` и другие.
+ * 4. Убрать внутренний пробел в IE 7, не влияя на обычный текстовый ввод.
+ * Известная проблема: внутренний интервал остается в IE 6.
+ * /
+
+кнопка ,
+html  input [ type = " button " ], / * 1 * /
+вход [ тип = " сброс " ],
+input [ type = " submit " ] {
+    -webkit-внешний вид : кнопка; / * 2 * /
+    курсор : указатель ; / * 3 * /
+    * переполнение : видимое ;  / * 4 * /
+}
+
+/ * *
+ * Переустановить курсор по умолчанию для отключенных элементов.
+ * /
+
+кнопка [ отключена ],
+ ввод HTML [ отключен ] {
+    курсор : по умолчанию ;
+}
+
+/ * *
+ * 1. В IE 8/9 задан размер окна адреса для поля содержимого.
+ * 2. Удалите лишние отступы в IE 8/9.
+ * 3. Убрать лишние отступы в IE 7.
+ * Известная проблема: избыточные отступы остаются в IE 6.
+ * /
+
+input [ type = " checkbox " ],
+input [ type = " radio " ] {
+    размер коробки : бордюр ; / * 1 * /
+    отступы : 0 ; / * 2 * /
+    * высота : 13 пикселей ; / * 3 * /
+    * ширина : 13 пикселей ; / * 3 * /
+}
+
+/ * *
+ * 1. Адрес `появление` установлен в` searchfield` в Safari 5 и Chrome.
+ * 2. Адрес `box-sizing` установлен на` border-box` в Safari 5 и Chrome
+ * (включите `-moz` в будущее).
+ * /
+
+input [ type = " search " ] {
+    -webkit-внешний вид : текстовое поле; / * 1 * /
+    -moz-box-sizing : content-box ;
+    -webkit-box-sizing : content-box ; / * 2 * /
+    размер блока : блок содержимого ;
+}
+
+/ * *
+ * Удалите внутренние отступы и кнопку отмены поиска в Safari 5 и Chrome
+ * на OS X.
+ * /
+
+input [ type = " search " ] :: - webkit-search-cancel-button ,
+input [ type = " search " ] :: - webkit-search-украшение {
+    внешний вид : нет ;
+}
+
+/ * *
+ * Удалите внутренние отступы и границы в Firefox 3+.
+ * /
+
+кнопка :: - moz-focus-inner ,
+вход :: - moz-focus-inner {
+    граница : 0 ;
+    отступы : 0 ;
+}
+
+/ * *
+ * 1. Удалите вертикальную полосу прокрутки по умолчанию в IE 6/7/8/9.
+ * 2. Улучшение читаемости и выравнивания во всех браузерах.
+ * /
+
+textarea {
+    переполнение : авто ; / * 1 * /
+    выравнивание по вертикали : верх ; / * 2 * /
+}
+
+/ * *
+ * Убрать большую часть пробелов между ячейками таблицы.
+ * /
+
+таблица {
+    коллапс границы : коллапс ;
+    интервал границы : 0 ;
+}
+
+HTML ,
+кнопка ,
+вход ,
+выберите ,
+textarea {
+    цвет : # 222 ;
+}
+
+
+:: - moz-selection {
+    фон : # b3d4fc ;
+    тень текста : нет ;
+}
+
+:: выбор {
+    фон : # b3d4fc ;
+    тень текста : нет ;
+}
+
+img {
+    выравнивание по вертикали : среднее ;
+}
+
+fieldset {
+    граница : 0 ;
+    поле : 0 ;
+    отступы : 0 ;
+}
+
+textarea {
+    изменить размер : вертикальный ;
+}
+
+.chromeframe {
+    маржа : 0,2 em  0 ;
+    фон : #ccc ;
+    цвет : # 000 ;
+    заполнение : 0,2 em  0 ;
+}
+/* Reset CSS */
+body{
+    
+}
+/* Шрифты */
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('../fonts/Roboto-Thin.ttf') format('truetype');
+    font-weight: 100;
+}
+@font-face {
+    font-family: 'Roboto';
+    src: url('../fonts/Roboto-Light.ttf') format('truetype');
+    font-weight: 300;
+}
+@font-face {
+    font-family: 'Roboto';
+    src: url('../fonts/Roboto-Regular.ttf') format('truetype');
+    font-weight: 400;
+}
+@font-face {
+    font-family: 'Roboto';
+    src: url('../fonts/Roboto-Medium.ttf') format('truetype');
+    font-weight: 500;
+}
+@font-face {
+    font-family: 'Roboto';
+    src: url('../fonts/Roboto-Bold.ttf') format('truetype');
+    font-weight: 700;
+}
+@font-face {
+    font-family: 'Roboto';
+    src: url('../fonts/Roboto-Black.ttf') format('truetype');
+    font-weight: 900;
+}
+
+/* ОБшие стили */
 body,
 p,
 h1,
@@ -13,12 +417,32 @@ h3 {
     box-sizing: border-box;
     font-family: "Roboto", sans-serif;
 }
-@font-face {
-    font-family: 'Roboto';
-    src: url('https://fonts.google.com/specimen/Roboto') format('truetype');
-    font-weight: 400;
+h2 {
+    font-size: 50px;
+    font-weight: 700;
+}
+.block02__text1{
+    font-size: 40px;
+    font-weight: 700;
+}
+h3{
+    font-size: 35px;
+    font-weight: 700;
+    color: rgb(36, 36, 36);
+}
+p{
+    font-size: 14px;
+    font-weight: 200;
+    color: #000000;
+    line-height: 1.2;
+    margin-top: 20px;
 }
 
+.present a{
+    color: white;
+    font-size: 18px;
+    text-decoration: none;
+}
 .movie-list {
     padding: 100px 0;
 }
@@ -28,6 +452,11 @@ h3 {
     font-weight: 700;
     margin: 0 0 77px 20px;
     text-align: center;
+}
+.block02{
+    width: 1030px;
+    margin: 90px auto 0 170px;
+   
 }
 .container {
     max-width: 1030px;
@@ -132,3 +561,175 @@ th.th_genre_top_th{
     color: #fff;
     text-decoration: none;
 }
+.block02_col1{
+    float: left;
+    width: 33.33%;
+    text-align: center;
+}
+.block02_col1 p{
+    margin-top: 16px;
+}
+.block02__image-wrap{
+    height: 211px;
+}
+.block02__image-wrap{
+    position: relative;
+    margin-bottom: 40px;
+}
+.block02__image-wrap img{
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+}
+.block02__row {
+    overflow: hidden;
+    margin-top: 120px;
+}
+.block02__info{
+    width: 515px;
+    padding: 40px 30px;
+    background: white;
+    box-shadow: 0px 1px 2px 0px rgba(35, 31, 32, 0.65);
+    position: absolute;
+    top: -210px;
+    right: 0;
+    z-index: 1;
+}
+.block02__info-wrap{
+    width: 1030px;
+    margin: 0 auto;
+    position: relative;
+}
+.block02__image-wrap .img1 {
+    margin-left: 54px;
+}
+.block02__image-wrap .img2 {
+    margin-left: 86px;
+    margin-top: -2px;
+}
+.block02__image-wrap .img3 {
+    margin-left: 94px;
+    margin-top: 28px;
+}
+.advantages1 {
+    margin-left: -47px;
+    margin-top: -5px;
+}
+.advantages2 {
+    margin-left: -3px;
+    margin-top: -2px;
+}
+.advantages3 {
+    margin-left: 45px;
+    margin-top: -2px;
+    
+}
+.block01{
+    background: url('../img/top_bg.jpg') no-repeat center / cover;
+    height:110vh;
+    position: relative;
+    overflow: hidden;
+}
+h1{
+    font-size: 80px;
+    color: white;
+    text-align: center;   
+    font-weight: 200;
+}
+.subtitle{
+    font-size: 50px;
+    color: white;
+    text-align: center;   
+    font-weight: 400;
+}
+.block01::after{
+    content: '';
+    position: absolute; 
+    width: 110%;
+    height: 100px;
+    transform: rotate(-3deg);
+    background: #fff;
+    bottom: -50px;
+    left: 0;
+}
+.block03 {
+    background: url('../img/b4_bg.jpg') no-repeat center / cover;
+    height:120vh;
+    position: relative;
+    overflow: hidden;
+}
+.present{
+    width: 220px;
+    height: 55px;
+    background-color: rgb(144, 210, 61);
+    border-radius: 15px;
+    left: 981px;
+    top: 2718px;
+    float: right;
+    margin-right: 148px;
+    margin-top: 40px;
+    
+}
+.block03_present{
+    color: white;
+    text-align: right;
+    font-size: 50px;
+    font-weight: 600;
+    margin-top: 200px;
+    margin-right: 148px;
+    letter-spacing: 0.3px;
+
+}
+.block03 p{
+    color: white;
+    text-align: right;
+    margin-left: 530px;
+    width: 666px;
+    font-weight: 100;
+}
+.block03_box img{
+    position: absolute;
+    border-radius: 50%;
+    background-color:rgb(251, 175, 22);
+    box-shadow: 10.5px 18.187px 12px 0px rgba(35, 31, 32, 0.55);
+    left: 170px;
+    width: 330px;
+    height: 330px;
+    z-index: 76;
+  }
+  .block03_text{
+      margin-top: 53px;
+  }
+  .block03::after{
+    content: '';
+    position: absolute; 
+    width: 110%;
+    height: 112px;
+    transform: rotate(-5deg);
+    background: #fff;
+    bottom: -51px;
+    left: 0;
+  }
+  .block03::after{
+    content: '';
+    position: absolute; 
+    width: 110%;
+    height: 196px;
+    transform: rotate(-5deg);
+    background: #fff;
+    bottom: 641px;
+    left: -10px;
+  }
+  .block_03::after{
+    content: '';
+    position: absolute; 
+    width: 110%;
+    height: 113px;
+    transform: rotate(-5deg);
+    background: #fff;
+    bottom: -2413px;
+    left: 0;
+  }
