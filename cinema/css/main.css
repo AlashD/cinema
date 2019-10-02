@@ -1,373 +1,479 @@
 /* Reset CSS */
 /* http://meyerweb.com/eric/tools/css/reset/
-   v2.0-модифицированный | 20110126
-   Лицензия: нет (общественное достояние)
+   v2.0-modified | 20110126
+   License: none (public domain)
 */
-html , body , div , span , applet , object , iframe ,
-h1 , h2 , h3 , h4 , h5 , h6 , p , цитата , pre ,
-, сокр , акроним , адрес , большой , процитировать , код ,
-del , dfn , em , img , ins , kbd , q , s , samp ,
-маленький , ударный , сильный , саб , sup , tt , var ,
-б , ты , я , центр ,
-дл , дт , дд , ол , ул , ли ,
-fieldset , форма , метка , легенда ,
-таблица , заголовок , TBODY , TFOOT , THEAD , тр , е , тд ,
-статья , в стороне , холст , детали , вставка ,
-figure , figcaption , footer , header , hgroup ,
-меню , навигация , вывод , рубин , раздел , сводка ,
-время , отметка , аудио , видео {
-  поле : 0 ;
-	отступы : 0 ;
-	граница : 0 ;
-	размер шрифта : 100 % ;
-	шрифт : наследовать ;
-	выравнивание по вертикали : базовая линия ;
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
 }
 
-/ * не забудьте установить некоторые стили фокуса для доступности * /
-: focus {
-    контур : 0 ;
+/* make sure to set some focus styles for accessibility */
+:focus {
+    outline: 0;
 }
 
-/ * Сброс роли отображения HTML5 для старых браузеров * /
-статья , в стороне , детали , figcaption , рисунок ,
-нижний колонтитул , заголовок , hgroup , меню , навигация , раздел {
-	дисплей : блок ;
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
 }
 
-тело {
-	высота строки : 1 ;
+body {
+    line-height: 1;
 }
 
-ol , ul {
-	стиль списка : нет ;
+ol,
+ul {
+    list-style: none;
 }
 
-цитата , q {
-	цитаты : нет ;
+blockquote,
+q {
+    quotes: none;
 }
 
-blockquote : до , blockquote : до ,
-q : до , q : после {
-	содержание : ' ' ;
-	содержание : нет ;
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
 }
 
-таблица {
-	коллапс границы : коллапс ;
-	интервал границы : 0 ;
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
 }
 
-input [ type = search ] :: - webkit-search-cancel-button ,
-input [ type = search ] :: - webkit-search-украшение ,
-input [ type = search ] :: - webkit-search-results-button ,
-input [ type = search ] :: - webkit-search-results-украшение {
-    внешний вид : нет ;
-    -возможность появления : нет ;
+input[type=search]::-webkit-search-cancel-button,
+input[type=search]::-webkit-search-decoration,
+input[type=search]::-webkit-search-results-button,
+input[type=search]::-webkit-search-results-decoration {
+    -webkit-appearance: none;
+    -moz-appearance: none;
 }
 
-input [ type = search ] {
-    внешний вид : нет ;
-    -возможность появления : нет ;
-    -webkit-box-sizing : content-box ;
-    -moz-box-sizing : content-box ;
-    размер блока : блок содержимого ;
+input[type=search] {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -webkit-box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
 }
 
 textarea {
-    переполнение : авто ;
-    выравнивание по вертикали : верх ;
-    изменить размер : вертикальный ;
+    overflow: auto;
+    vertical-align: top;
+    resize: vertical;
 }
 
-/ * *
- * Правильное отображение inline-block не определено в IE 6/7/8/9 и Firefox 3.
- * /
+/**
+ * Correct `inline-block` display not defined in IE 6/7/8/9 and Firefox 3.
+ */
 
-аудио ,
-холст ,
-видео {
-    дисплей : встроенный блок ;
-    * дисплей : встроенный ;
-    * увеличение : 1 ;
-    максимальная ширина : 100 % ;
+audio,
+canvas,
+video {
+    display: inline-block;
+    *display: inline;
+    *zoom: 1;
+    max-width: 100%;
 }
 
-/ * *
- * Запретить современным браузерам отображение `audio` без элементов управления.
- * Убрать лишнюю высоту в устройствах iOS 5.
- * /
+/**
+ * Prevent modern browsers from displaying `audio` without controls.
+ * Remove excess height in iOS 5 devices.
+ */
 
-аудио : нет ([ контролирует ]) {
-    дисплей : нет ;
-    высота : 0 ;
+audio:not([controls]) {
+    display: none;
+    height: 0;
 }
 
-/ * *
- * Стиль адресации отсутствует в IE 7/8/9, Firefox 3 и Safari 4.
- * Известная проблема: нет поддержки IE 6.
- * /
+/**
+ * Address styling not present in IE 7/8/9, Firefox 3, and Safari 4.
+ * Known issue: no IE 6 support.
+ */
 
-[ скрыто ] {
-    дисплей : нет ;
+[hidden] {
+    display: none;
 }
 
-/ * *
- * 1. Исправьте странное изменение размера текста в IE 6/7, когда тело `font-size` установлено с помощью
- * `em` юниты.
- * 2. Запретить изменение размера текста iOS после изменения ориентации, не отключая
- * пользовательский зум.
- * /
+/**
+ * 1. Correct text resizing oddly in IE 6/7 when body `font-size` is set using
+ *    `em` units.
+ * 2. Prevent iOS text size adjust after orientation change, without disabling
+ *    user zoom.
+ */
 
 html {
-    размер шрифта : 100 % ; / * 1 * /
-    -webkit-text-size-Adjust : 100 % ; / * 2 * /
-    -ms-text-size-Adjust : 100 % ; / * 2 * /
+    font-size: 100%;
+    /* 1 */
+    -webkit-text-size-adjust: 100%;
+    /* 2 */
+    -ms-text-size-adjust: 100%;
+    /* 2 */
 }
 
-/ * *
- * Устранить несоответствие `outline` между Chrome и другими браузерами.
- * /
+/**
+ * Address `outline` inconsistency between Chrome and other browsers.
+ */
 
-a : focus {
-    контур : тонкий  пунктир ;
+a:focus {
+    outline: thin dotted;
 }
 
-/ * *
- * Улучшение читаемости, когда фокус, а также мышь зависла во всех браузерах.
- * /
+/**
+ * Improve readability when focused and also mouse hovered in all browsers.
+ */
 
-а : активный ,
-a : hover {
-    контур : 0 ;
+a:active,
+a:hover {
+    outline: 0;
 }
 
-/ * *
- * 1. Удалите границу внутри элемента `a` в IE 6/7/8/9 и Firefox 3.
- * 2. Улучшение качества изображения при масштабировании в IE 7.
- * /
+/**
+ * 1. Remove border when inside `a` element in IE 6/7/8/9 and Firefox 3.
+ * 2. Improve image quality when scaled in IE 7.
+ */
 
 img {
-    граница : 0 ; / * 1 * /
-    -ms-interpolation-mode : бикубический; / * 2 * /
+    border: 0;
+    /* 1 */
+    -ms-interpolation-mode: bicubic;
+    /* 2 */
 }
 
-/ * *
- * Запас адресов отсутствует в IE 6/7/8/9, Safari 5 и Opera 11.
- * /
+/**
+ * Address margin not present in IE 6/7/8/9, Safari 5, and Opera 11.
+ */
 
-число {
-    поле : 0 ;
+figure {
+    margin: 0;
 }
 
-/ * *
- * Правильное поле отображается странным образом в IE 6/7.
- * /
+/**
+ * Correct margin displayed oddly in IE 6/7.
+ */
 
-форма {
-    поле : 0 ;
+form {
+    margin: 0;
 }
 
-/ * *
- * Определить согласованные границы, поля и отступы.
- * /
+/**
+ * Define consistent border, margin, and padding.
+ */
 
 fieldset {
-    граница : 1 px  solid  # c0c0c0 ;
-    поле : 0  2 px ;
-    обивка : 0,35 EM  0,625 эм  0,75 эм ;
+    border: 1px solid #c0c0c0;
+    margin: 0 2px;
+    padding: 0.35em 0.625em 0.75em;
 }
 
-/ * *
- * 1. Правильный цвет не наследуется в IE 6/7/8/9.
- * 2. Правильный текст не переносится в Firefox 3.
- * 3. Правильное выравнивание отображается странным образом в IE 6/7.
- * /
+/**
+ * 1. Correct color not being inherited in IE 6/7/8/9.
+ * 2. Correct text not wrapping in Firefox 3.
+ * 3. Correct alignment displayed oddly in IE 6/7.
+ */
 
-легенда {
-    граница : 0 ; / * 1 * /
-    отступы : 0 ;
-    пустое пространство : нормальное ; / * 2 * /
-    * поле слева : -7 пикселей ; / * 3 * /
+legend {
+    border: 0;
+    /* 1 */
+    padding: 0;
+    white-space: normal;
+    /* 2 */
+    *margin-left: -7px;
+    /* 3 */
 }
 
-/ * *
- * 1. Правильный размер шрифта не наследуется во всех браузерах.
- * 2. Поля адреса устанавливаются по-разному в IE 6/7, Firefox 3+, Safari 5,
- * и хром.
- * 3. Улучшение внешнего вида и согласованности во всех браузерах.
- * /
+/**
+ * 1. Correct font size not being inherited in all browsers.
+ * 2. Address margins set differently in IE 6/7, Firefox 3+, Safari 5,
+ *    and Chrome.
+ * 3. Improve appearance and consistency in all browsers.
+ */
 
-кнопка ,
-вход ,
-выберите ,
+button,
+input,
+select,
 textarea {
-    размер шрифта : 100 % ; / * 1 * /
-    поле : 0 ; / * 2 * /
-    выравнивание по вертикали : базовая линия ; / * 3 * /
-    * вертикальное выравнивание : среднее ; / * 3 * /
+    font-size: 100%;
+    /* 1 */
+    margin: 0;
+    /* 2 */
+    vertical-align: baseline;
+    /* 3 */
+    *vertical-align: middle;
+    /* 3 */
 }
 
-/ * *
- * Адрес Firefox 3+, устанавливающий `line-height` на` input`, используя `! Important` в
- * таблица стилей UA.
- * /
+/**
+ * Address Firefox 3+ setting `line-height` on `input` using `!important` in
+ * the UA stylesheet.
+ */
 
-кнопка ,
-вход {
-    высота строки : нормальная ;
+button,
+input {
+    line-height: normal;
 }
 
-/ * *
- * Адрес несовместимого наследования `text-transform` для` button` и `select`.
- * Все остальные элементы управления формой не наследуют значения `text-transform`.
- * Исправить наследование стиля `button` в Chrome, Safari 5+ и IE 6+.
- * Исправить наследование стиля `select` в Firefox 4+ и Opera.
- * /
+/**
+ * Address inconsistent `text-transform` inheritance for `button` and `select`.
+ * All other form control elements do not inherit `text-transform` values.
+ * Correct `button` style inheritance in Chrome, Safari 5+, and IE 6+.
+ * Correct `select` style inheritance in Firefox 4+ and Opera.
+ */
 
-кнопка ,
-выберите {
-    преобразование текста : нет ;
+button,
+select {
+    text-transform: none;
 }
 
-/ * *
- * 1. Избегайте ошибки WebKit в Android 4.0. * Где (2) уничтожает собственный `audio`
- * и `video` управления.
- * 2. Исправлена ​​невозможность стилизовать кликабельные `input` типы в iOS.
- * 3. Улучшение удобства использования и согласованности стиля курсора между типом изображения
- * `input` и другие.
- * 4. Убрать внутренний пробел в IE 7, не влияя на обычный текстовый ввод.
- * Известная проблема: внутренний интервал остается в IE 6.
- * /
+/**
+ * 1. Avoid the WebKit bug in Android 4.0.* where (2) destroys native `audio`
+ *    and `video` controls.
+ * 2. Correct inability to style clickable `input` types in iOS.
+ * 3. Improve usability and consistency of cursor style between image-type
+ *    `input` and others.
+ * 4. Remove inner spacing in IE 7 without affecting normal text inputs.
+ *    Known issue: inner spacing remains in IE 6.
+ */
 
-кнопка ,
-html  input [ type = " button " ], / * 1 * /
-вход [ тип = " сброс " ],
-input [ type = " submit " ] {
-    -webkit-внешний вид : кнопка; / * 2 * /
-    курсор : указатель ; / * 3 * /
-    * переполнение : видимое ;  / * 4 * /
+button,
+html input[type="button"],
+/* 1 */
+input[type="reset"],
+input[type="submit"] {
+    -webkit-appearance: button;
+    /* 2 */
+    cursor: pointer;
+    /* 3 */
+    *overflow: visible;
+    /* 4 */
 }
 
-/ * *
- * Переустановить курсор по умолчанию для отключенных элементов.
- * /
+/**
+ * Re-set default cursor for disabled elements.
+ */
 
-кнопка [ отключена ],
- ввод HTML [ отключен ] {
-    курсор : по умолчанию ;
+button[disabled],
+html input[disabled] {
+    cursor: default;
 }
 
-/ * *
- * 1. В IE 8/9 задан размер окна адреса для поля содержимого.
- * 2. Удалите лишние отступы в IE 8/9.
- * 3. Убрать лишние отступы в IE 7.
- * Известная проблема: избыточные отступы остаются в IE 6.
- * /
+/**
+ * 1. Address box sizing set to content-box in IE 8/9.
+ * 2. Remove excess padding in IE 8/9.
+ * 3. Remove excess padding in IE 7.
+ *    Known issue: excess padding remains in IE 6.
+ */
 
-input [ type = " checkbox " ],
-input [ type = " radio " ] {
-    размер коробки : бордюр ; / * 1 * /
-    отступы : 0 ; / * 2 * /
-    * высота : 13 пикселей ; / * 3 * /
-    * ширина : 13 пикселей ; / * 3 * /
+input[type="checkbox"],
+input[type="radio"] {
+    box-sizing: border-box;
+    /* 1 */
+    padding: 0;
+    /* 2 */
+    *height: 13px;
+    /* 3 */
+    *width: 13px;
+    /* 3 */
 }
 
-/ * *
- * 1. Адрес `появление` установлен в` searchfield` в Safari 5 и Chrome.
- * 2. Адрес `box-sizing` установлен на` border-box` в Safari 5 и Chrome
- * (включите `-moz` в будущее).
- * /
+/**
+ * 1. Address `appearance` set to `searchfield` in Safari 5 and Chrome.
+ * 2. Address `box-sizing` set to `border-box` in Safari 5 and Chrome
+ *    (include `-moz` to future-proof).
+ */
 
-input [ type = " search " ] {
-    -webkit-внешний вид : текстовое поле; / * 1 * /
-    -moz-box-sizing : content-box ;
-    -webkit-box-sizing : content-box ; / * 2 * /
-    размер блока : блок содержимого ;
+input[type="search"] {
+    -webkit-appearance: textfield;
+    /* 1 */
+    -moz-box-sizing: content-box;
+    -webkit-box-sizing: content-box;
+    /* 2 */
+    box-sizing: content-box;
 }
 
-/ * *
- * Удалите внутренние отступы и кнопку отмены поиска в Safari 5 и Chrome
- * на OS X.
- * /
+/**
+ * Remove inner padding and search cancel button in Safari 5 and Chrome
+ * on OS X.
+ */
 
-input [ type = " search " ] :: - webkit-search-cancel-button ,
-input [ type = " search " ] :: - webkit-search-украшение {
-    внешний вид : нет ;
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+    -webkit-appearance: none;
 }
 
-/ * *
- * Удалите внутренние отступы и границы в Firefox 3+.
- * /
+/**
+ * Remove inner padding and border in Firefox 3+.
+ */
 
-кнопка :: - moz-focus-inner ,
-вход :: - moz-focus-inner {
-    граница : 0 ;
-    отступы : 0 ;
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+    border: 0;
+    padding: 0;
 }
 
-/ * *
- * 1. Удалите вертикальную полосу прокрутки по умолчанию в IE 6/7/8/9.
- * 2. Улучшение читаемости и выравнивания во всех браузерах.
- * /
+/**
+ * 1. Remove default vertical scrollbar in IE 6/7/8/9.
+ * 2. Improve readability and alignment in all browsers.
+ */
 
 textarea {
-    переполнение : авто ; / * 1 * /
-    выравнивание по вертикали : верх ; / * 2 * /
+    overflow: auto;
+    /* 1 */
+    vertical-align: top;
+    /* 2 */
 }
 
-/ * *
- * Убрать большую часть пробелов между ячейками таблицы.
- * /
+/**
+ * Remove most spacing between table cells.
+ */
 
-таблица {
-    коллапс границы : коллапс ;
-    интервал границы : 0 ;
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
 }
 
-HTML ,
-кнопка ,
-вход ,
-выберите ,
+html,
+button,
+input,
+select,
 textarea {
-    цвет : # 222 ;
+    color: #222;
 }
 
 
-:: - moz-selection {
-    фон : # b3d4fc ;
-    тень текста : нет ;
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
 }
 
-:: выбор {
-    фон : # b3d4fc ;
-    тень текста : нет ;
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
 }
 
 img {
-    выравнивание по вертикали : среднее ;
+    vertical-align: middle;
 }
 
 fieldset {
-    граница : 0 ;
-    поле : 0 ;
-    отступы : 0 ;
+    border: 0;
+    margin: 0;
+    padding: 0;
 }
 
 textarea {
-    изменить размер : вертикальный ;
+    resize: vertical;
 }
 
 .chromeframe {
-    маржа : 0,2 em  0 ;
-    фон : #ccc ;
-    цвет : # 000 ;
-    заполнение : 0,2 em  0 ;
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
 }
+
 /* Reset CSS */
-body{
-    
-}
+
+
 /* Шрифты */
 
 @font-face {
@@ -375,26 +481,31 @@ body{
     src: url('../fonts/Roboto-Thin.ttf') format('truetype');
     font-weight: 100;
 }
+
 @font-face {
     font-family: 'Roboto';
     src: url('../fonts/Roboto-Light.ttf') format('truetype');
     font-weight: 300;
 }
+
 @font-face {
     font-family: 'Roboto';
     src: url('../fonts/Roboto-Regular.ttf') format('truetype');
     font-weight: 400;
 }
+
 @font-face {
     font-family: 'Roboto';
     src: url('../fonts/Roboto-Medium.ttf') format('truetype');
     font-weight: 500;
 }
+
 @font-face {
     font-family: 'Roboto';
     src: url('../fonts/Roboto-Bold.ttf') format('truetype');
     font-weight: 700;
 }
+
 @font-face {
     font-family: 'Roboto';
     src: url('../fonts/Roboto-Black.ttf') format('truetype');
@@ -408,7 +519,7 @@ h1,
 h2,
 h3,
 h3 {
-    backgroung: transparent;
+    background: transparent;
     border: 0;
     margin: 0;
     outline: 0;
@@ -417,20 +528,24 @@ h3 {
     box-sizing: border-box;
     font-family: "Roboto", sans-serif;
 }
+
 h2 {
     font-size: 50px;
     font-weight: 700;
 }
-.block02__text1{
+
+.block02__text1 {
     font-size: 40px;
     font-weight: 700;
 }
-h3{
+
+h3 {
     font-size: 35px;
     font-weight: 700;
     color: rgb(36, 36, 36);
 }
-p{
+
+p {
     font-size: 14px;
     font-weight: 200;
     color: #000000;
@@ -438,14 +553,16 @@ p{
     margin-top: 20px;
 }
 
-.present a{
+.present a {
     color: white;
     font-size: 18px;
     text-decoration: none;
 }
+
 .movie-list {
     padding: 100px 0;
 }
+
 .movie-list_header {
     font-size: 50px;
     color: #252525;
@@ -453,23 +570,28 @@ p{
     margin: 0 0 77px 20px;
     text-align: center;
 }
-.block02{
+
+.block02 {
     width: 1030px;
     margin: 90px auto 0 170px;
-   
 }
+
 .container {
     max-width: 1030px;
     margin: 0 auto 0 170px;
+    padding: 18px;
 }
+
 .movie-list_table {
     width: 100%;
     border-collapse: collapse;
 }
+
 .movie-list_table thead {
     border-radius: 15px;
     overflow: hidden;
 }
+
 .movie-list_table th {
     font-size: 30px;
     font-weight: 600;
@@ -478,9 +600,11 @@ p{
     padding: 18px 0;
     text-align: center;
 }
+
 .movie-list_table td {
     padding: 12px 12px 12px 12px;
 }
+
 .movie-list_td td {
     font-size: 22px;
     font-weight: 300;
@@ -488,16 +612,20 @@ p{
     padding: 18px 0;
     vertical-align: top;
 }
-.movie-list_td a{
+
+.movie-list_td a {
     color: white;
     text-decoration: none;
 }
+
 .movie-list_table tr:nth-child(2n) {
     background: #4b4d4f;
 }
+
 .movie-list_table tr {
     background: #373737;
 }
+
 .foot td {
     font-size: 14px;
     background: #fff;
@@ -505,13 +633,16 @@ p{
     font-weight: 100;
     padding-top: 39px;
 }
+
 td:first-child {
     text-align: center;
     vertical-align: top;
 }
+
 .icon-down:before {
     content: "\f10a";
 }
+
 .icon:before {
     font-family: fico;
     font-weight: normal !important;
@@ -520,9 +651,11 @@ td:first-child {
     vertical-align: baseline;
     -webkit-font-smoothing: antialiased;
 }
+
 .icon-up:before {
     content: "\f10a";
 }
+
 td.movie-list_left {
     text-align: left;
     padding-left: 80px;
@@ -530,53 +663,64 @@ td.movie-list_left {
     vertical-align: top;
     width: 450px;
 }
+
 th.th_name_top_th {
     text-align: left;
     padding-left: 80px;
     width: 450px;
 }
-th.th_genre_top_th{
+
+th.th_genre_top_th {
     width: 220px;
 }
+
 .th_time_top {
     overflow: hidden;
     border-radius: 15px 0 0 0;
     width: 230px;
 }
+
 .th_icon_top {
     overflow: hidden;
     border-radius: 0 15px 0 0;
     width: 130px;
 }
+
 .tb_left_bottom {
     overflow: hidden;
     border-radius: 0 0 0 15px;
 }
+
 .tb_right_bottom {
     overflow: hidden;
     border-radius: 0 0 15px 0;
-
 }
+
 .movie-list_table thead a {
     color: #fff;
     text-decoration: none;
 }
-.block02_col1{
+
+.block02_col1 {
     float: left;
     width: 33.33%;
     text-align: center;
 }
-.block02_col1 p{
+
+.block02_col1 p {
     margin-top: 16px;
 }
-.block02__image-wrap{
+
+.block02__image-wrap {
     height: 211px;
 }
-.block02__image-wrap{
+
+.block02__image-wrap {
     position: relative;
     margin-bottom: 40px;
 }
-.block02__image-wrap img{
+
+.block02__image-wrap img {
     position: absolute;
     left: 0;
     right: 0;
@@ -584,11 +728,13 @@ th.th_genre_top_th{
     bottom: 0;
     margin: auto;
 }
+
 .block02__row {
     overflow: hidden;
     margin-top: 120px;
 }
-.block02__info{
+
+.block02__info {
     width: 515px;
     padding: 40px 30px;
     background: white;
@@ -598,56 +744,67 @@ th.th_genre_top_th{
     right: 0;
     z-index: 1;
 }
-.block02__info-wrap{
+
+.block02__info-wrap {
     width: 1030px;
     margin: 0 auto;
     position: relative;
 }
+
 .block02__image-wrap .img1 {
     margin-left: 54px;
 }
+
 .block02__image-wrap .img2 {
     margin-left: 86px;
     margin-top: -2px;
 }
+
 .block02__image-wrap .img3 {
     margin-left: 94px;
     margin-top: 28px;
 }
+
 .advantages1 {
     margin-left: -47px;
     margin-top: -5px;
 }
+
 .advantages2 {
     margin-left: -3px;
     margin-top: -2px;
 }
+
 .advantages3 {
     margin-left: 45px;
     margin-top: -2px;
-    
+
 }
-.block01{
+
+.block01 {
     background: url('../img/top_bg.jpg') no-repeat center / cover;
-    height:110vh;
+    height: 110vh;
     position: relative;
     overflow: hidden;
 }
-h1{
+
+h1 {
     font-size: 80px;
     color: white;
-    text-align: center;   
+    text-align: center;
     font-weight: 200;
 }
-.subtitle{
+
+.subtitle {
     font-size: 50px;
     color: white;
-    text-align: center;   
+    text-align: center;
     font-weight: 400;
 }
-.block01::after{
+
+.block01::after {
     content: '';
-    position: absolute; 
+    position: absolute;
     width: 110%;
     height: 100px;
     transform: rotate(-3deg);
@@ -655,13 +812,15 @@ h1{
     bottom: -50px;
     left: 0;
 }
+
 .block03 {
     background: url('../img/b4_bg.jpg') no-repeat center / cover;
-    height:120vh;
+    height: 120vh;
     position: relative;
     overflow: hidden;
 }
-.present{
+
+.present {
     width: 220px;
     height: 55px;
     background-color: rgb(144, 210, 61);
@@ -671,9 +830,9 @@ h1{
     float: right;
     margin-right: 148px;
     margin-top: 40px;
-    
 }
-.block03_present{
+
+.block03_present {
     color: white;
     text-align: right;
     font-size: 50px;
@@ -681,55 +840,148 @@ h1{
     margin-top: 200px;
     margin-right: 148px;
     letter-spacing: 0.3px;
-
 }
-.block03 p{
+
+.block03 p {
     color: white;
     text-align: right;
     margin-left: 530px;
     width: 666px;
     font-weight: 100;
 }
-.block03_box img{
+
+.block03_box img {
     position: absolute;
     border-radius: 50%;
-    background-color:rgb(251, 175, 22);
+    background-color: rgb(251, 175, 22);
     box-shadow: 10.5px 18.187px 12px 0px rgba(35, 31, 32, 0.55);
     left: 170px;
     width: 330px;
     height: 330px;
     z-index: 76;
-  }
-  .block03_text{
-      margin-top: 53px;
-  }
-  .block03::after{
+}
+
+.block03_text {
+    margin-top: 53px;
+}
+
+.block03::after {
     content: '';
-    position: absolute; 
+    position: absolute;
     width: 110%;
     height: 112px;
     transform: rotate(-5deg);
     background: #fff;
     bottom: -51px;
     left: 0;
-  }
-  .block03::after{
+}
+
+.block03::after {
     content: '';
-    position: absolute; 
+    position: absolute;
     width: 110%;
     height: 196px;
     transform: rotate(-5deg);
     background: #fff;
     bottom: 641px;
     left: -10px;
-  }
-  .block_03::after{
+
+}
+
+.block_03::after {
     content: '';
-    position: absolute; 
+    position: absolute;
     width: 110%;
-    height: 113px;
+    height: 120px;
     transform: rotate(-5deg);
     background: #fff;
-    bottom: -2413px;
+    bottom: -2365px;
     left: 0;
-  }
+}
+.movie-grid{
+    margin-top: 104px;
+}
+.movies{
+    margin-bottom: 50px;
+}
+.movies + p{
+    margin-bottom: 80px;
+    width: 670px;
+}
+.movie-grid__flex{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -18px;
+}
+.movie-grid__item{
+    padding: 20px;
+}
+.movie-grid__inner1{
+    position: relative;
+    overflow: hidden;
+}
+.movie-grid__description{
+    position: absolute;
+    left: 0;
+    right: 0;
+    height: 100%;
+    bottom: -100%;
+    background: rgb(144,210,61,.8);
+    border-radius: 11px;
+    padding: 23px;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    transition: .2s;
+}
+.movie-grid__item:hover .movie-grid__description{
+bottom: 0;
+}
+.movie-grid__text1{
+    font-size: 35px;
+    font-weight: 900;
+    color: white;
+    margin: 0 0 10px;
+}
+.movie-grid__hr{
+    width: 80px;
+    height: 8px;
+    border: 0;
+    box-shadow: none;
+    margin: 0 0 14px;
+    background: white;
+}
+.movie-grid__text2{
+    font-size: 18px;
+    color: white;
+    flex: 1;
+}
+.movie-grid__svg{
+    fill: white;
+    transition: .2s;
+}
+.movie-grid__svg:hover{
+    fill: green;
+}
+.movie-grid__links{
+    display: flex;
+}
+.movie-grid__link1 + .movie-grid__link1{
+    margin-left: 6px;
+}
+.contacts{
+    background: rgb(144,210,61,.8);
+    height: 218px;
+    position: relative;
+}
+.contacts_icon{
+    display: block;
+    vertical-align: middle;
+    position: absolute;
+    align-content: center;
+}
+
+
+
+
+  
