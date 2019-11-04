@@ -202,7 +202,7 @@ audio:not([controls]) {
  */
 
 html {
-    font-size: 1.04vw;
+    font-size: 1.46vw;
     /* 1 */
     /* -webkit-text-size-adjust: 100%; */
     /* 2 */
@@ -552,11 +552,6 @@ h2 {
     font-weight: 700;
 }
 
-.block02__text1 {
-    font-size: 2rem;
-    font-weight: 700;
-}
-
 h3 {
     font-size: 1.75rem;
     font-weight: 700;
@@ -577,8 +572,157 @@ p {
     text-decoration: none;
 }
 
+/* Шапка */
+.block01 {
+    background: url('../img/top_bg.jpg') no-repeat center / cover;
+    min-height: 100vh;
+    position: relative;
+    overflow: hidden;
+}
+.block01__logo{
+    margin-top: 2.5rem;
+    margin-left: 8.5rem;
+    position: absolute;
+}
+.block01__logo img{
+    width: 9.4rem;
+}
+.block01::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    border-left: 100vw solid transparent;
+    border-bottom:  5.55rem solid #fff;
+}
+
+/* Блок Преимущества */
+
+.block02__info {
+    width: 25.75rem;
+    padding: 2rem 1.5rem;
+    background: white;
+    box-shadow: 0px 1px 2px 0px rgba(35, 31, 32, 0.65);
+    position: absolute;
+    top: -10.5rem;
+    right: 0;
+    z-index: 1;
+}
+
+.block02__info-wrap {
+    width: 51.5rem;
+    margin: 0 auto;
+    position: relative;
+}
+
+.block02 {
+    width: 51.5rem;
+    margin: 4.5rem auto 0 8.5rem;
+}
+/* 
+.block02_col1 {
+    float: left;
+    width: 33.33%;
+    text-align: center;
+}
+
+.block02__text1 {
+    font-size: 2rem;
+    font-weight: 900;
+    margin: 0 0 1.25rem;
+}
+
+.block02_col1 p {
+    margin-top: 0.8rem;
+}
+
+.block02__image-wrap {
+    height: 10.55rem;
+    position: relative;
+    margin-bottom: 2rem;
+}
+
+.block02__image-wrap img {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+.block02__row {
+    overflow: hidden;
+    margin-top: 6rem;
+}
+
+
+.block02__image-wrap .img1 {
+    margin-left: 2.7rem;
+}
+
+.block02__image-wrap .img2 {
+    margin-left: 4.3rem;
+}
+
+.block02__image-wrap .img3 {
+    margin-left: 4.7rem;
+    margin-top: 1.4rem;
+}
+
+.advantages1 {
+    margin-left: -2.35rem;
+    margin-top: -5px;
+}
+
+.advantages2 {
+    margin-left: -3px;
+    margin-top: -2px;
+}
+
+.advantages3 {
+    margin-left: 2.25rem;
+    margin-top: -2px;
+} */
+.block02-flex {
+    display: flex;
+    margin-top: 5.55rem;
+}
+.block02-flex__block {
+    padding: 0.9rem;
+    width: 12.5rem;
+}
+.block02-flex__block2 {
+    padding: 0.9rem;
+    flex: 1 1 auto;
+}
+.block02__image-wrap {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 10.35rem;
+    padding-bottom: 2.5rem;
+    max-width: 100%;
+}
+.advantages{
+    display: flex;
+	justify-content: center;
+    height: 3.4rem;
+}
+h3 + p{
+    display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.img__advant {
+    max-width: 100%;
+}
+.img__advant2 {
+    max-width: 100%;
+}
+/* Блок Выберите фильм */
 .movie-list {
-    padding: 5rem 0;
+    padding: 5rem 0;  
 }
 
 .movie-list_header {
@@ -588,15 +732,9 @@ p {
     margin: 0 0 3.85rem 1rem;
     text-align: center;
 }
-
-.block02 {
-    width: 51.5rem;
-    margin: 4.5rem auto 0 8.5rem;
-}
-
 .container {
     max-width: 51.5rem;
-    margin: 0 auto 0 8.5rem;
+    margin: auto;
     padding: 0.9rem;
 }
 
@@ -719,98 +857,6 @@ th.th_genre_top_th {
     text-decoration: none;
 }
 
-.block02_col1 {
-    float: left;
-    width: 33.33%;
-    text-align: center;
-}
-
-.block02_col1 p {
-    margin-top: 0.8rem;
-}
-
-.block02__image-wrap {
-    height: 10.55rem;
-}
-
-.block02__image-wrap {
-    position: relative;
-    margin-bottom: 2rem;
-}
-
-.block02__image-wrap img {
-    position: absolute;
-    left: 0;
-    right: 0;
-    top: 0;
-    bottom: 0;
-    margin: auto;
-}
-
-.block02__row {
-    overflow: hidden;
-    margin-top: 6rem;
-}
-
-.block02__info {
-    width: 25.75rem;
-    padding: 2rem 1.5rem;
-    background: white;
-    box-shadow: 0px 1px 2px 0px rgba(35, 31, 32, 0.65);
-    position: absolute;
-    top: -10.5rem;
-    right: 0;
-    z-index: 1;
-}
-
-.block02__info-wrap {
-    width: 51.5rem;
-    margin: 0 auto;
-    position: relative;
-}
-
-.block02__image-wrap .img1 {
-    margin-left: 2.7rem;
-}
-
-.block02__image-wrap .img2 {
-    margin-left: 4.3rem;
-    margin-top: -2px;
-}
-
-.block02__image-wrap .img3 {
-    margin-left: 4.7rem;
-    margin-top: 1.4rem;
-}
-
-.advantages1 {
-    margin-left: -2.35rem;
-    margin-top: -5px;
-}
-
-.advantages2 {
-    margin-left: -3px;
-    margin-top: -2px;
-}
-
-.advantages3 {
-    margin-left: 2.25rem;
-    margin-top: -2px;
-
-}
-
-.block01 {
-    background: url('../img/top_bg.jpg') no-repeat center / cover;
-    height: 110vh;
-    position: relative;
-    overflow: hidden;
-}
-.block01__logo{
-    margin-top: 2.5rem;
-    margin-left: 8.5rem;
-    position: absolute;
-}
-
 h1 {
     font-size: 4rem;
     color: white;
@@ -824,18 +870,7 @@ h1 {
     text-align: center;
     font-weight: 400;
 }
-
-.block01::after {
-    content: '';
-    position: absolute;
-    width: 100%;
-    height: 5rem;
-    transform: rotate(-3deg);
-    background: #fff;
-    bottom: -2.5rem;
-    left: 0;
-}
-
+/* Подарок */
 .block03 {
     background: url('../img/b4_bg.jpg') no-repeat center / cover;
     height: 120vh;
@@ -891,15 +926,13 @@ h1 {
 .block03::after {
     content: '';
     position: absolute;
-    width: 100%;
-    height: 5.6rem;
-    transform: rotate(-5deg);
-    background: #fff;
-    bottom: -2.55rem;
+    bottom: 0;
     left: 0;
+    border-left: 100vw solid transparent;
+    border-bottom:  5.55rem solid #fff;
 }
 
-.block03::after {
+/* .block03::after {
     content: '';
     position: absolute;
     width: 100%;
@@ -909,18 +942,18 @@ h1 {
     bottom: 32.05rem;
     left: -0.5rem;
 
-}
+} */
 
-.block_03::after {
+/* .block03::after {
     content: '';
     position: absolute;
-    width: 100%;
-    height: 6rem;
-    transform: rotate(-5deg);
-    background: #fff;
-    bottom: -118.25rem;
+    bottom: 0;
     left: 0;
-}
+    border-left: 100vw solid transparent;
+    border-bottom:  5.55rem solid #000;
+} */
+
+/* Фильмы */
 .movie-grid{
     margin-top: 5.2rem;
 }
@@ -934,7 +967,6 @@ h1 {
 .movie-grid__flex{
     display: flex;
     flex-wrap: wrap;
-    margin: 0 -0.9rem;
 }
 .movie-grid__item{
     padding: 1rem;
@@ -992,14 +1024,10 @@ bottom: 0;
 .contacts_icon a{
     text-decoration: none;
 }
-.contacts_icon {
-    display: flex;
-    justify-content: center;
-}
-
 .movie-grid__link1 + .movie-grid__link1{
     margin-left: 6px;
 }
+/* Контакты */
 .contacts{
     background: rgb(144,210,61,.8);
     height: 10.9rem;

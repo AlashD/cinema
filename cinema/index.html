@@ -61,14 +61,16 @@
           minima optio perferendis quibusdam quis reprehenderit, saepe! Debitis enim optio saepe voluptatibus.</p>
       </div>
     </div>
-    <div class="block02__pluses">
+
+    <section class="block02__pluses">
       <h2>Почему мы?</h2>
-      <div class="block02__row">
-        <section class="block02_col1">
+      <div class="block02-flex">
+        <div class="block02-flex__block">
           <div class="block02__image-wrap">
-            <img class="img1" src="images/b2_icon_1.jpg" alt="Большие экраны" title="Широкие экраны" />
+            <img class="img__advant" src="images/b2_icon_1.jpg" alt="Большие экраны" title="Широкие экраны" />
           </div>
-          <h3 class="advantages1">Большие экраны</h3>
+          <div class="block02__advantages">
+          <h3 class="advantages">Большие экраны</h3>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. At autem cum dolores
             dolorum
@@ -78,21 +80,22 @@
             tempora
             temporibus veritatis vero voluptates.
           </p>
-        </section>
-        <section class="block02_col1">
+        </div>
+        </div>
+        <div class="block02-flex__block2">
           <div class="block02__image-wrap">
-            <img class="img2" src="images/b2_icon_2.jpg" alt="Объемный звук" title="Объемное звучание" />
+            <img class="img__advant2" src="images/b2_icon_2.jpg" alt="Объемный звук" title="Объемное звучание" />
           </div>
-          <h3 class="advantages2">Объемный звук</h3>
+          <h3 class="advantages">Объемный звук</h3>
           <p>
             Lorem ipsum dolor sit amet.
           </p>
-        </section>
-        <section class="block02_col1">
+        </div>
+        <div class="block02-flex__block">
           <div class="block02__image-wrap">
-            <img class="img3" src="images/b2_icon_3.jpg" alt="Удобные кресла" title="Уютные места" />
+            <img class="img__advant" src="images/b2_icon_3.jpg" alt="Удобные кресла" title="Уютные места" />
           </div>
-          <h3 class="advantages3">Удобные кресла</h3>
+          <h3 class="advantages">Удобные кресла</h3>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. At autem cum dolores
             dolorum
@@ -102,14 +105,12 @@
             tempora
             temporibus veritatis vero voluptates.
           </p>
-        </section>
-      </div>
-    </div>
+        </div>
+        </div>
+    </section>
   </section>
-  <br>
   <section>
     <div class="movie-list">
-      <a name="buy"></a>
       <h2 class="movie-list_header">Выберите фильм</h2>
       <div class="container">
         <table class="movie-list_table">
@@ -122,22 +123,7 @@
               <th class="th_icon_top"><a href="#"></a></th>
             </tr>
           </thead>
-          <tfoot class="foot">
-            <tr>
-              <td colspan="3">
-                Lorem ipsum dolor sit amet, consectetur adipisicing
-                elit.
-                Aliquid eum
-                facere obcaecati quam rem
-                repellendus
-                veritatis. Aliquam beatae, delectus dignissimos enim
-                exercitationem
-                mollitia nisi pariatur
-                quaerat quam, qui
-                quibusdam sunt!
-              </td>
-            </tr>
-          </tfoot>
+          
           <tbody class="movie-list_td">
             <tr>
               <td>10am - 12pm</td>
@@ -186,6 +172,22 @@
                   </svg></a></td>
             </tr>
           </tbody>
+          <tfoot class="foot">
+            <tr>
+              <td colspan="3">
+                Lorem ipsum dolor sit amet, consectetur adipisicing
+                elit.
+                Aliquid eum
+                facere obcaecati quam rem
+                repellendus
+                veritatis. Aliquam beatae, delectus dignissimos enim
+                exercitationem
+                mollitia nisi pariatur
+                quaerat quam, qui
+                quibusdam sunt!
+              </td>
+            </tr>
+          </tfoot>
         </table>
       </div>
     </div>
@@ -217,7 +219,7 @@
           </p>
         </div>
         <button class="present">
-          <a href="#">Получить подарок</a>
+        Получить подарок
         </button>
       </div>
     </div>
@@ -248,7 +250,7 @@
                   <svg class="movie-grid__svg" xmlns="http://www.w3.org/2000/svg"
                     xmlns:xlink="http://www.w3.org/1999/xlink" width="34px" height="34px">
                     <defs>
-                      <filter filterUnits="userSpaceOnUse" id="Filter_0" x="0px" y="0px" width="34px" height="34px">
+                      <filter filterUnits="userSpaceOnUse" x="0px" y="0px" width="34px" height="34px">
                         <feOffset in="SourceAlpha" dx="0" dy="1" />
                         <feGaussianBlur result="blurOut" stdDeviation="1" />
                         <feFlood flood-color="rgb(0, 0, 0)" result="floodOut" />
@@ -269,10 +271,10 @@
                   </svg>
                 </a>
                 <a class="movie-grid__link1" href="https://twitter.com/" title="twitter" target="_blank">
-                  <svg class="movie-grid__svg xmlns=" http://www.w3.org/2000/svg"
+                  <svg class="movie-grid__svg" xmlns="http://www.w3.org/2000/svg"
                     xmlns:xlink="http://www.w3.org/1999/xlink" width="34px" height="34px">
                     <defs>
-                      <filter filterUnits="userSpaceOnUse" id="Filter_0" x="0px" y="0px" width="34px" height="34px">
+                      <filter filterUnits="userSpaceOnUse" x="0px" y="0px" width="34px" height="34px">
                         <feOffset in="SourceAlpha" dx="0" dy="1" />
                         <feGaussianBlur result="blurOut" stdDeviation="1" />
                         <feFlood flood-color="rgb(0, 0, 0)" result="floodOut" />
@@ -293,10 +295,10 @@
                   </svg>
                 </a>
                 <a class="movie-grid__link1" href="https://www.behance.net" title="behance" target="_blank">
-                  <svg class="movie-grid__svg xmlns=" http://www.w3.org/2000/svg"
+                  <svg class="movie-grid__svg" xmlns="http://www.w3.org/2000/svg"
                     xmlns:xlink="http://www.w3.org/1999/xlink" width="35px" height="34px">
                     <defs>
-                      <filter filterUnits="userSpaceOnUse" id="Filter_0" x="0px" y="0px" width="35px" height="34px">
+                      <filter filterUnits="userSpaceOnUse" x="0px" y="0px" width="35px" height="34px">
                         <feOffset in="SourceAlpha" dx="0" dy="1" />
                         <feGaussianBlur result="blurOut" stdDeviation="1" />
                         <feFlood flood-color="rgb(0, 0, 0)" result="floodOut" />
@@ -317,10 +319,10 @@
                   </svg>
                 </a>
                 <a class="movie-grid__link1" href="https://dribbble.com/" title="dribbble" target="_blank">
-                  <svg class="movie-grid__svg xmlns=" http://www.w3.org/2000/svg"
+                  <svg class="movie-grid__svg" xmlns="http://www.w3.org/2000/svg"
                     xmlns:xlink="http://www.w3.org/1999/xlink" width="34px" height="34px">
                     <defs>
-                      <filter filterUnits="userSpaceOnUse" id="Filter_0" x="0px" y="0px" width="34px" height="34px">
+                      <filter filterUnits="userSpaceOnUse" x="0px" y="0px" width="34px" height="34px">
                         <feOffset in="SourceAlpha" dx="0" dy="1" />
                         <feGaussianBlur result="blurOut" stdDeviation="1" />
                         <feFlood flood-color="rgb(0, 0, 0)" result="floodOut" />
@@ -381,10 +383,10 @@
                   </svg>
                 </a>
                 <a class="movie-grid__link1" href="https://twitter.com/" title="twitter" target="_blank">
-                  <svg class="movie-grid__svg xmlns=" http://www.w3.org/2000/svg"
+                  <svg class="movie-grid__svg" xmlns="http://www.w3.org/2000/svg"
                     xmlns:xlink="http://www.w3.org/1999/xlink" width="34px" height="34px">
                     <defs>
-                      <filter filterUnits="userSpaceOnUse" id="Filter_0" x="0px" y="0px" width="34px" height="34px">
+                      <filter filterUnits="userSpaceOnUse" x="0px" y="0px" width="34px" height="34px">
                         <feOffset in="SourceAlpha" dx="0" dy="1" />
                         <feGaussianBlur result="blurOut" stdDeviation="1" />
                         <feFlood flood-color="rgb(0, 0, 0)" result="floodOut" />
@@ -405,10 +407,10 @@
                   </svg>
                 </a>
                 <a class="movie-grid__link1" href="https://www.behance.net" title="behance" target="_blank">
-                  <svg class="movie-grid__svg xmlns=" http://www.w3.org/2000/svg"
+                  <svg class="movie-grid__svg" xmlns="http://www.w3.org/2000/svg"
                     xmlns:xlink="http://www.w3.org/1999/xlink" width="35px" height="34px">
                     <defs>
-                      <filter filterUnits="userSpaceOnUse" id="Filter_0" x="0px" y="0px" width="35px" height="34px">
+                      <filter filterUnits="userSpaceOnUse" x="0px" y="0px" width="35px" height="34px">
                         <feOffset in="SourceAlpha" dx="0" dy="1" />
                         <feGaussianBlur result="blurOut" stdDeviation="1" />
                         <feFlood flood-color="rgb(0, 0, 0)" result="floodOut" />
@@ -429,10 +431,10 @@
                   </svg>
                 </a>
                 <a class="movie-grid__link1" href="https://dribbble.com/" title="dribbble" target="_blank">
-                  <svg class="movie-grid__svg xmlns=" http://www.w3.org/2000/svg"
+                  <svg class="movie-grid__svg" xmlns="http://www.w3.org/2000/svg"
                     xmlns:xlink="http://www.w3.org/1999/xlink" width="34px" height="34px">
                     <defs>
-                      <filter filterUnits="userSpaceOnUse" id="Filter_0" x="0px" y="0px" width="34px" height="34px">
+                      <filter filterUnits="userSpaceOnUse" x="0px" y="0px" width="34px" height="34px">
                         <feOffset in="SourceAlpha" dx="0" dy="1" />
                         <feGaussianBlur result="blurOut" stdDeviation="1" />
                         <feFlood flood-color="rgb(0, 0, 0)" result="floodOut" />
@@ -472,7 +474,7 @@
                   <svg class="movie-grid__svg" xmlns="http://www.w3.org/2000/svg"
                     xmlns:xlink="http://www.w3.org/1999/xlink" width="34px" height="34px">
                     <defs>
-                      <filter filterUnits="userSpaceOnUse" id="Filter_0" x="0px" y="0px" width="34px" height="34px">
+                      <filter filterUnits="userSpaceOnUse" x="0px" y="0px" width="34px" height="34px">
                         <feOffset in="SourceAlpha" dx="0" dy="1" />
                         <feGaussianBlur result="blurOut" stdDeviation="1" />
                         <feFlood flood-color="rgb(0, 0, 0)" result="floodOut" />
@@ -493,10 +495,10 @@
                   </svg>
                 </a>
                 <a class="movie-grid__link1" href="https://twitter.com/" title="twitter" target="_blank">
-                  <svg class="movie-grid__svg xmlns=" http://www.w3.org/2000/svg"
+                  <svg class="movie-grid__svg" xmlns="http://www.w3.org/2000/svg"
                     xmlns:xlink="http://www.w3.org/1999/xlink" width="34px" height="34px">
                     <defs>
-                      <filter filterUnits="userSpaceOnUse" id="Filter_0" x="0px" y="0px" width="34px" height="34px">
+                      <filter filterUnits="userSpaceOnUse" x="0px" y="0px" width="34px" height="34px">
                         <feOffset in="SourceAlpha" dx="0" dy="1" />
                         <feGaussianBlur result="blurOut" stdDeviation="1" />
                         <feFlood flood-color="rgb(0, 0, 0)" result="floodOut" />
@@ -517,10 +519,10 @@
                   </svg>
                 </a>
                 <a class="movie-grid__link1" href="https://www.behance.net" title="behance" target="_blank">
-                  <svg class="movie-grid__svg xmlns=" http://www.w3.org/2000/svg"
+                  <svg class="movie-grid__svg" xmlns="http://www.w3.org/2000/svg"
                     xmlns:xlink="http://www.w3.org/1999/xlink" width="35px" height="34px">
                     <defs>
-                      <filter filterUnits="userSpaceOnUse" id="Filter_0" x="0px" y="0px" width="35px" height="34px">
+                      <filter filterUnits="userSpaceOnUse" x="0px" y="0px" width="35px" height="34px">
                         <feOffset in="SourceAlpha" dx="0" dy="1" />
                         <feGaussianBlur result="blurOut" stdDeviation="1" />
                         <feFlood flood-color="rgb(0, 0, 0)" result="floodOut" />
@@ -541,10 +543,10 @@
                   </svg>
                 </a>
                 <a class="movie-grid__link1" href="https://dribbble.com/" title="dribbble" target="_blank">
-                  <svg class="movie-grid__svg xmlns=" http://www.w3.org/2000/svg"
+                  <svg class="movie-grid__svg" xmlns="http://www.w3.org/2000/svg"
                     xmlns:xlink="http://www.w3.org/1999/xlink" width="34px" height="34px">
                     <defs>
-                      <filter filterUnits="userSpaceOnUse" id="Filter_0" x="0px" y="0px" width="34px" height="34px">
+                      <filter filterUnits="userSpaceOnUse" x="0px" y="0px" width="34px" height="34px">
                         <feOffset in="SourceAlpha" dx="0" dy="1" />
                         <feGaussianBlur result="blurOut" stdDeviation="1" />
                         <feFlood flood-color="rgb(0, 0, 0)" result="floodOut" />
@@ -584,7 +586,7 @@
                   <svg class="movie-grid__svg" xmlns="http://www.w3.org/2000/svg"
                     xmlns:xlink="http://www.w3.org/1999/xlink" width="34px" height="34px">
                     <defs>
-                      <filter filterUnits="userSpaceOnUse" id="Filter_0" x="0px" y="0px" width="34px" height="34px">
+                      <filter filterUnits="userSpaceOnUse" x="0px" y="0px" width="34px" height="34px">
                         <feOffset in="SourceAlpha" dx="0" dy="1" />
                         <feGaussianBlur result="blurOut" stdDeviation="1" />
                         <feFlood flood-color="rgb(0, 0, 0)" result="floodOut" />
@@ -605,10 +607,10 @@
                   </svg>
                 </a>
                 <a class="movie-grid__link1" href="https://twitter.com/" title="twitter" target="_blank">
-                  <svg class="movie-grid__svg xmlns=" http://www.w3.org/2000/svg"
+                  <svg class="movie-grid__svg" xmlns="http://www.w3.org/2000/svg"
                     xmlns:xlink="http://www.w3.org/1999/xlink" width="34px" height="34px">
                     <defs>
-                      <filter filterUnits="userSpaceOnUse" id="Filter_0" x="0px" y="0px" width="34px" height="34px">
+                      <filter filterUnits="userSpaceOnUse" x="0px" y="0px" width="34px" height="34px">
                         <feOffset in="SourceAlpha" dx="0" dy="1" />
                         <feGaussianBlur result="blurOut" stdDeviation="1" />
                         <feFlood flood-color="rgb(0, 0, 0)" result="floodOut" />
@@ -629,10 +631,10 @@
                   </svg>
                 </a>
                 <a class="movie-grid__link1" href="https://www.behance.net" title="behance" target="_blank">
-                  <svg class="movie-grid__svg xmlns=" http://www.w3.org/2000/svg"
+                  <svg class="movie-grid__svg" xmlns="http://www.w3.org/2000/svg"
                     xmlns:xlink="http://www.w3.org/1999/xlink" width="35px" height="34px">
                     <defs>
-                      <filter filterUnits="userSpaceOnUse" id="Filter_0" x="0px" y="0px" width="35px" height="34px">
+                      <filter filterUnits="userSpaceOnUse" x="0px" y="0px" width="35px" height="34px">
                         <feOffset in="SourceAlpha" dx="0" dy="1" />
                         <feGaussianBlur result="blurOut" stdDeviation="1" />
                         <feFlood flood-color="rgb(0, 0, 0)" result="floodOut" />
@@ -653,10 +655,10 @@
                   </svg>
                 </a>
                 <a class="movie-grid__link1" href="https://dribbble.com/" title="dribbble" target="_blank">
-                  <svg class="movie-grid__svg xmlns=" http://www.w3.org/2000/svg"
+                  <svg class="movie-grid__svg" xmlns="http://www.w3.org/2000/svg"
                     xmlns:xlink="http://www.w3.org/1999/xlink" width="34px" height="34px">
                     <defs>
-                      <filter filterUnits="userSpaceOnUse" id="Filter_0" x="0px" y="0px" width="34px" height="34px">
+                      <filter filterUnits="userSpaceOnUse" x="0px" y="0px" width="34px" height="34px">
                         <feOffset in="SourceAlpha" dx="0" dy="1" />
                         <feGaussianBlur result="blurOut" stdDeviation="1" />
                         <feFlood flood-color="rgb(0, 0, 0)" result="floodOut" />
@@ -696,7 +698,7 @@
                   <svg class="movie-grid__svg" xmlns="http://www.w3.org/2000/svg"
                     xmlns:xlink="http://www.w3.org/1999/xlink" width="34px" height="34px">
                     <defs>
-                      <filter filterUnits="userSpaceOnUse" id="Filter_0" x="0px" y="0px" width="34px" height="34px">
+                      <filter filterUnits="userSpaceOnUse" x="0px" y="0px" width="34px" height="34px">
                         <feOffset in="SourceAlpha" dx="0" dy="1" />
                         <feGaussianBlur result="blurOut" stdDeviation="1" />
                         <feFlood flood-color="rgb(0, 0, 0)" result="floodOut" />
@@ -717,10 +719,10 @@
                   </svg>
                 </a>
                 <a class="movie-grid__link1" href="https://twitter.com/" title="twitter" target="_blank">
-                  <svg class="movie-grid__svg xmlns=" http://www.w3.org/2000/svg"
+                  <svg class="movie-grid__svg" xmlns="http://www.w3.org/2000/svg"
                     xmlns:xlink="http://www.w3.org/1999/xlink" width="34px" height="34px">
                     <defs>
-                      <filter filterUnits="userSpaceOnUse" id="Filter_0" x="0px" y="0px" width="34px" height="34px">
+                      <filter filterUnits="userSpaceOnUse" x="0px" y="0px" width="34px" height="34px">
                         <feOffset in="SourceAlpha" dx="0" dy="1" />
                         <feGaussianBlur result="blurOut" stdDeviation="1" />
                         <feFlood flood-color="rgb(0, 0, 0)" result="floodOut" />
@@ -741,10 +743,10 @@
                   </svg>
                 </a>
                 <a class="movie-grid__link1" href="https://www.behance.net" title="behance" target="_blank">
-                  <svg class="movie-grid__svg xmlns=" http://www.w3.org/2000/svg"
+                  <svg class="movie-grid__svg" xmlns="http://www.w3.org/2000/svg"
                     xmlns:xlink="http://www.w3.org/1999/xlink" width="35px" height="34px">
                     <defs>
-                      <filter filterUnits="userSpaceOnUse" id="Filter_0" x="0px" y="0px" width="35px" height="34px">
+                      <filter filterUnits="userSpaceOnUse" x="0px" y="0px" width="35px" height="34px">
                         <feOffset in="SourceAlpha" dx="0" dy="1" />
                         <feGaussianBlur result="blurOut" stdDeviation="1" />
                         <feFlood flood-color="rgb(0, 0, 0)" result="floodOut" />
@@ -765,10 +767,10 @@
                   </svg>
                 </a>
                 <a class="movie-grid__link1" href="https://dribbble.com/" title="dribbble" target="_blank">
-                  <svg class="movie-grid__svg xmlns=" http://www.w3.org/2000/svg"
+                  <svg class="movie-grid__svg" xmlns="http://www.w3.org/2000/svg"
                     xmlns:xlink="http://www.w3.org/1999/xlink" width="34px" height="34px">
                     <defs>
-                      <filter filterUnits="userSpaceOnUse" id="Filter_0" x="0px" y="0px" width="34px" height="34px">
+                      <filter filterUnits="userSpaceOnUse" x="0px" y="0px" width="34px" height="34px">
                         <feOffset in="SourceAlpha" dx="0" dy="1" />
                         <feGaussianBlur result="blurOut" stdDeviation="1" />
                         <feFlood flood-color="rgb(0, 0, 0)" result="floodOut" />
@@ -808,7 +810,7 @@
                   <svg class="movie-grid__svg" xmlns="http://www.w3.org/2000/svg"
                     xmlns:xlink="http://www.w3.org/1999/xlink" width="34px" height="34px">
                     <defs>
-                      <filter filterUnits="userSpaceOnUse" id="Filter_0" x="0px" y="0px" width="34px" height="34px">
+                      <filter filterUnits="userSpaceOnUse" x="0px" y="0px" width="34px" height="34px">
                         <feOffset in="SourceAlpha" dx="0" dy="1" />
                         <feGaussianBlur result="blurOut" stdDeviation="1" />
                         <feFlood flood-color="rgb(0, 0, 0)" result="floodOut" />
@@ -829,10 +831,10 @@
                   </svg>
                 </a>
                 <a class="movie-grid__link1" href="https://twitter.com/" title="twitter" target="_blank">
-                  <svg class="movie-grid__svg xmlns=" http://www.w3.org/2000/svg"
+                  <svg class="movie-grid__svg" xmlns="http://www.w3.org/2000/svg"
                     xmlns:xlink="http://www.w3.org/1999/xlink" width="34px" height="34px">
                     <defs>
-                      <filter filterUnits="userSpaceOnUse" id="Filter_0" x="0px" y="0px" width="34px" height="34px">
+                      <filter filterUnits="userSpaceOnUse" x="0px" y="0px" width="34px" height="34px">
                         <feOffset in="SourceAlpha" dx="0" dy="1" />
                         <feGaussianBlur result="blurOut" stdDeviation="1" />
                         <feFlood flood-color="rgb(0, 0, 0)" result="floodOut" />
@@ -853,10 +855,10 @@
                   </svg>
                 </a>
                 <a class="movie-grid__link1" href="https://www.behance.net" title="behance" target="_blank">
-                  <svg class="movie-grid__svg xmlns=" http://www.w3.org/2000/svg"
+                  <svg class="movie-grid__svg" xmlns="http://www.w3.org/2000/svg"
                     xmlns:xlink="http://www.w3.org/1999/xlink" width="35px" height="34px">
                     <defs>
-                      <filter filterUnits="userSpaceOnUse" id="Filter_0" x="0px" y="0px" width="35px" height="34px">
+                      <filter filterUnits="userSpaceOnUse" x="0px" y="0px" width="35px" height="34px">
                         <feOffset in="SourceAlpha" dx="0" dy="1" />
                         <feGaussianBlur result="blurOut" stdDeviation="1" />
                         <feFlood flood-color="rgb(0, 0, 0)" result="floodOut" />
@@ -877,10 +879,10 @@
                   </svg>
                 </a>
                 <a class="movie-grid__link1" href="https://dribbble.com/" title="dribbble" target="_blank">
-                  <svg class="movie-grid__svg xmlns=" http://www.w3.org/2000/svg"
+                  <svg class="movie-grid__svg" xmlns="http://www.w3.org/2000/svg"
                     xmlns:xlink="http://www.w3.org/1999/xlink" width="34px" height="34px">
                     <defs>
-                      <filter filterUnits="userSpaceOnUse" id="Filter_0" x="0px" y="0px" width="34px" height="34px">
+                      <filter filterUnits="userSpaceOnUse" x="0px" y="0px" width="34px" height="34px">
                         <feOffset in="SourceAlpha" dx="0" dy="1" />
                         <feGaussianBlur result="blurOut" stdDeviation="1" />
                         <feFlood flood-color="rgb(0, 0, 0)" result="floodOut" />
@@ -920,7 +922,7 @@
                   <svg class="movie-grid__svg" xmlns="http://www.w3.org/2000/svg"
                     xmlns:xlink="http://www.w3.org/1999/xlink" width="34px" height="34px">
                     <defs>
-                      <filter filterUnits="userSpaceOnUse" id="Filter_0" x="0px" y="0px" width="34px" height="34px">
+                      <filter filterUnits="userSpaceOnUse" x="0px" y="0px" width="34px" height="34px">
                         <feOffset in="SourceAlpha" dx="0" dy="1" />
                         <feGaussianBlur result="blurOut" stdDeviation="1" />
                         <feFlood flood-color="rgb(0, 0, 0)" result="floodOut" />
@@ -941,10 +943,10 @@
                   </svg>
                 </a>
                 <a class="movie-grid__link1" href="https://twitter.com/" title="twitter" target="_blank">
-                  <svg class="movie-grid__svg xmlns=" http://www.w3.org/2000/svg"
+                  <svg class="movie-grid__svg" xmlns="http://www.w3.org/2000/svg"
                     xmlns:xlink="http://www.w3.org/1999/xlink" width="34px" height="34px">
                     <defs>
-                      <filter filterUnits="userSpaceOnUse" id="Filter_0" x="0px" y="0px" width="34px" height="34px">
+                      <filter filterUnits="userSpaceOnUse" x="0px" y="0px" width="34px" height="34px">
                         <feOffset in="SourceAlpha" dx="0" dy="1" />
                         <feGaussianBlur result="blurOut" stdDeviation="1" />
                         <feFlood flood-color="rgb(0, 0, 0)" result="floodOut" />
@@ -965,10 +967,10 @@
                   </svg>
                 </a>
                 <a class="movie-grid__link1" href="https://www.behance.net" title="behance" target="_blank">
-                  <svg class="movie-grid__svg xmlns=" http://www.w3.org/2000/svg"
+                  <svg class="movie-grid__svg" xmlns="http://www.w3.org/2000/svg"
                     xmlns:xlink="http://www.w3.org/1999/xlink" width="35px" height="34px">
                     <defs>
-                      <filter filterUnits="userSpaceOnUse" id="Filter_0" x="0px" y="0px" width="35px" height="34px">
+                      <filter filterUnits="userSpaceOnUse" x="0px" y="0px" width="35px" height="34px">
                         <feOffset in="SourceAlpha" dx="0" dy="1" />
                         <feGaussianBlur result="blurOut" stdDeviation="1" />
                         <feFlood flood-color="rgb(0, 0, 0)" result="floodOut" />
@@ -989,10 +991,10 @@
                   </svg>
                 </a>
                 <a class="movie-grid__link1" href="https://dribbble.com/" title="dribbble" target="_blank">
-                  <svg class="movie-grid__svg xmlns=" http://www.w3.org/2000/svg"
+                  <svg class="movie-grid__svg" xmlns="http://www.w3.org/2000/svg"
                     xmlns:xlink="http://www.w3.org/1999/xlink" width="34px" height="34px">
                     <defs>
-                      <filter filterUnits="userSpaceOnUse" id="Filter_0" x="0px" y="0px" width="34px" height="34px">
+                      <filter filterUnits="userSpaceOnUse" x="0px" y="0px" width="34px" height="34px">
                         <feOffset in="SourceAlpha" dx="0" dy="1" />
                         <feGaussianBlur result="blurOut" stdDeviation="1" />
                         <feFlood flood-color="rgb(0, 0, 0)" result="floodOut" />
@@ -1032,7 +1034,7 @@
                   <svg class="movie-grid__svg" xmlns="http://www.w3.org/2000/svg"
                     xmlns:xlink="http://www.w3.org/1999/xlink" width="34px" height="34px">
                     <defs>
-                      <filter filterUnits="userSpaceOnUse" id="Filter_0" x="0px" y="0px" width="34px" height="34px">
+                      <filter filterUnits="userSpaceOnUse" x="0px" y="0px" width="34px" height="34px">
                         <feOffset in="SourceAlpha" dx="0" dy="1" />
                         <feGaussianBlur result="blurOut" stdDeviation="1" />
                         <feFlood flood-color="rgb(0, 0, 0)" result="floodOut" />
@@ -1053,10 +1055,10 @@
                   </svg>
                 </a>
                 <a class="movie-grid__link1" href="https://twitter.com/" title="twitter" target="_blank">
-                  <svg class="movie-grid__svg xmlns=" http://www.w3.org/2000/svg"
+                  <svg class="movie-grid__svg" xmlns="http://www.w3.org/2000/svg"
                     xmlns:xlink="http://www.w3.org/1999/xlink" width="34px" height="34px">
                     <defs>
-                      <filter filterUnits="userSpaceOnUse" id="Filter_0" x="0px" y="0px" width="34px" height="34px">
+                      <filter filterUnits="userSpaceOnUse" x="0px" y="0px" width="34px" height="34px">
                         <feOffset in="SourceAlpha" dx="0" dy="1" />
                         <feGaussianBlur result="blurOut" stdDeviation="1" />
                         <feFlood flood-color="rgb(0, 0, 0)" result="floodOut" />
@@ -1077,10 +1079,10 @@
                   </svg>
                 </a>
                 <a class="movie-grid__link1" href="https://www.behance.net" title="behance" target="_blank">
-                  <svg class="movie-grid__svg xmlns=" http://www.w3.org/2000/svg"
+                  <svg class="movie-grid__svg" xmlns="http://www.w3.org/2000/svg"
                     xmlns:xlink="http://www.w3.org/1999/xlink" width="35px" height="34px">
                     <defs>
-                      <filter filterUnits="userSpaceOnUse" id="Filter_0" x="0px" y="0px" width="35px" height="34px">
+                      <filter filterUnits="userSpaceOnUse" x="0px" y="0px" width="35px" height="34px">
                         <feOffset in="SourceAlpha" dx="0" dy="1" />
                         <feGaussianBlur result="blurOut" stdDeviation="1" />
                         <feFlood flood-color="rgb(0, 0, 0)" result="floodOut" />
@@ -1101,10 +1103,10 @@
                   </svg>
                 </a>
                 <a class="movie-grid__link1" href="https://dribbble.com/" title="dribbble" target="_blank">
-                  <svg class="movie-grid__svg xmlns=" http://www.w3.org/2000/svg"
+                  <svg class="movie-grid__svg" xmlns="http://www.w3.org/2000/svg"
                     xmlns:xlink="http://www.w3.org/1999/xlink" width="34px" height="34px">
                     <defs>
-                      <filter filterUnits="userSpaceOnUse" id="Filter_0" x="0px" y="0px" width="34px" height="34px">
+                      <filter filterUnits="userSpaceOnUse" x="0px" y="0px" width="34px" height="34px">
                         <feOffset in="SourceAlpha" dx="0" dy="1" />
                         <feGaussianBlur result="blurOut" stdDeviation="1" />
                         <feFlood flood-color="rgb(0, 0, 0)" result="floodOut" />
@@ -1144,7 +1146,7 @@
                   <svg class="movie-grid__svg" xmlns="http://www.w3.org/2000/svg"
                     xmlns:xlink="http://www.w3.org/1999/xlink" width="34px" height="34px">
                     <defs>
-                      <filter filterUnits="userSpaceOnUse" id="Filter_0" x="0px" y="0px" width="34px" height="34px">
+                      <filter filterUnits="userSpaceOnUse" x="0px" y="0px" width="34px" height="34px">
                         <feOffset in="SourceAlpha" dx="0" dy="1" />
                         <feGaussianBlur result="blurOut" stdDeviation="1" />
                         <feFlood flood-color="rgb(0, 0, 0)" result="floodOut" />
@@ -1165,10 +1167,10 @@
                   </svg>
                 </a>
                 <a class="movie-grid__link1" href="https://twitter.com/" title="twitter" target="_blank">
-                  <svg class="movie-grid__svg xmlns=" http://www.w3.org/2000/svg"
+                  <svg class="movie-grid__svg" xmlns="http://www.w3.org/2000/svg"
                     xmlns:xlink="http://www.w3.org/1999/xlink" width="34px" height="34px">
                     <defs>
-                      <filter filterUnits="userSpaceOnUse" id="Filter_0" x="0px" y="0px" width="34px" height="34px">
+                      <filter filterUnits="userSpaceOnUse" x="0px" y="0px" width="34px" height="34px">
                         <feOffset in="SourceAlpha" dx="0" dy="1" />
                         <feGaussianBlur result="blurOut" stdDeviation="1" />
                         <feFlood flood-color="rgb(0, 0, 0)" result="floodOut" />
@@ -1189,10 +1191,10 @@
                   </svg>
                 </a>
                 <a class="movie-grid__link1" href="https://www.behance.net" title="behance" target="_blank">
-                  <svg class="movie-grid__svg xmlns=" http://www.w3.org/2000/svg"
+                  <svg class="movie-grid__svg" xmlns="http://www.w3.org/2000/svg"
                     xmlns:xlink="http://www.w3.org/1999/xlink" width="35px" height="34px">
                     <defs>
-                      <filter filterUnits="userSpaceOnUse" id="Filter_0" x="0px" y="0px" width="35px" height="34px">
+                      <filter filterUnits="userSpaceOnUse" x="0px" y="0px" width="35px" height="34px">
                         <feOffset in="SourceAlpha" dx="0" dy="1" />
                         <feGaussianBlur result="blurOut" stdDeviation="1" />
                         <feFlood flood-color="rgb(0, 0, 0)" result="floodOut" />
@@ -1213,10 +1215,10 @@
                   </svg>
                 </a>
                 <a class="movie-grid__link1" href="https://dribbble.com/" title="dribbble" target="_blank">
-                  <svg class="movie-grid__svg xmlns=" http://www.w3.org/2000/svg"
+                  <svg class="movie-grid__svg" xmlns="http://www.w3.org/2000/svg"
                     xmlns:xlink="http://www.w3.org/1999/xlink" width="34px" height="34px">
                     <defs>
-                      <filter filterUnits="userSpaceOnUse" id="Filter_0" x="0px" y="0px" width="34px" height="34px">
+                      <filter filterUnits="userSpaceOnUse" x="0px" y="0px" width="34px" height="34px">
                         <feOffset in="SourceAlpha" dx="0" dy="1" />
                         <feGaussianBlur result="blurOut" stdDeviation="1" />
                         <feFlood flood-color="rgb(0, 0, 0)" result="floodOut" />
@@ -1254,7 +1256,7 @@
       <a class="fb" href="https://www.facebook.com/" title="facebook" target="_blank">
         <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="48px" height="48px">
           <defs>
-            <filter filterUnits="userSpaceOnUse" id="Filter_1" x="0px" y="0px" width="48px" height="48px">
+            <filter filterUnits="userSpaceOnUse" x="0px" y="0px" width="48px" height="48px">
               <feOffset in="SourceAlpha" dx="0" dy="1" />
               <feGaussianBlur result="blurOut" stdDeviation="1" />
               <feFlood flood-color="rgb(0, 0, 0)" result="floodOut" />
@@ -1278,7 +1280,7 @@
       <a href="https://twitter.com/" title="twitter" target="_blank">
         <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="49px" height="49px">
           <defs>
-            <filter filterUnits="userSpaceOnUse" id="Filter_1" x="0px" y="0px" width="49px" height="49px">
+            <filter filterUnits="userSpaceOnUse" x="0px" y="0px" width="49px" height="49px">
               <feOffset in="SourceAlpha" dx="0" dy="1" />
               <feGaussianBlur result="blurOut" stdDeviation="1" />
               <feFlood flood-color="rgb(0, 0, 0)" result="floodOut" />
@@ -1303,7 +1305,7 @@
       <a href="https://linkedin.com/" title="linkedin" target="_blank">
         <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="49px" height="49px">
           <defs>
-            <filter filterUnits="userSpaceOnUse" id="Filter_1" x="0px" y="0px" width="49px" height="49px">
+            <filter filterUnits="userSpaceOnUse" x="0px" y="0px" width="49px" height="49px">
               <feOffset in="SourceAlpha" dx="0" dy="1" />
               <feGaussianBlur result="blurOut" stdDeviation="1" />
               <feFlood flood-color="rgb(0, 0, 0)" result="floodOut" />
@@ -1327,7 +1329,7 @@
       <a href="https://www.google.com/intl/ru/gmail/about/#" title="gmail" target="_blank">
         <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="49px" height="49px">
           <defs>
-            <filter filterUnits="userSpaceOnUse" id="Filter_1" x="0px" y="0px" width="49px" height="49px">
+            <filter filterUnits="userSpaceOnUse" x="0px" y="0px" width="49px" height="49px">
               <feOffset in="SourceAlpha" dx="0" dy="1" />
               <feGaussianBlur result="blurOut" stdDeviation="1" />
               <feFlood flood-color="rgb(0, 0, 0)" result="floodOut" />
@@ -1384,12 +1386,12 @@
       <input placeholder="Имя*" required aria-required="true" />
     </div>
 
-    <div>
-      <lable>
+    
+      <div>
         Введите ваш e-mail
-      </lable>
+      </div>
       <input placeholder="e-mail*" required aria-required="true" />
-    </div>
+    
     <div>
       <select>
         <option value="1">Место 1</option>
@@ -1435,7 +1437,7 @@
 
     <div>
       <input type="checkbox" required aria-required="true" />
-      <label for="agreement">Согласие на обработку персональных данных</label>
+      <label>Согласие на обработку персональных данных</label>
     </div>
 
     <div>

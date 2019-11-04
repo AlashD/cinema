@@ -5,7 +5,7 @@
   }
   @media (max-width: 1000px) {
     html {
-      font-size: 15px;
+      font-size: 1.46vw;
     }
   }
   @media (max-width: 800px) {
@@ -45,13 +45,13 @@
       overflow: auto;
     }
     .block03__table {
-      width: 800px;
+      width: 40rem;
     }
     .block05__text2 {
       font-size: 1.5rem;
     }
   }
-  @media (max-width: 600px) {
+  @media (max-width: 30rem) {
     .container {
       width: 30rem;
     }
