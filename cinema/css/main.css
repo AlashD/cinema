@@ -733,8 +733,9 @@ h3 + p{
     text-align: center;
 }
 .container {
-    max-width: 51.5rem;
+    max-width: 50.3rem;
     margin: auto;
+    box-sizing: border-box;
     padding: 0.9rem;
 }
 
@@ -965,16 +966,39 @@ h1 {
     width: 33.5rem;
 }
 .movie-grid__flex{
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 2rem;
+    grid-row-gap: 2rem;
+    grid-template-areas: 
+    "movie-grid__item1 movie-grid__item2 movie-grid__item3"
+    "movie-grid__item4 movie-grid__item2 movie-grid__item5"
+    "movie-grid__item6 movie-grid__item2 movie-grid__item7";
 }
-.movie-grid__item{
-    padding: 1rem;
+.movie-grid__item1{
+    grid-area: movie-grid__item1;
 }
+.movie-grid__item3{
+    grid-area: movie-grid__item3;
+}
+.movie-grid__item4{
+    grid-area: movie-grid__item4;
+}
+.movie-grid__item5{
+    grid-area: movie-grid__item5;
+}
+.movie-grid__item6{
+    grid-area: movie-grid__item6;
+}
+.movie-grid__item7{
+    grid-area: movie-grid__item7;
+}
+
 .movie-grid__inner1{
     position: relative;
     overflow: hidden;
 }
+
 .movie-grid__description{
     position: absolute;
     left: 0;
@@ -991,6 +1015,24 @@ h1 {
 }
 .movie-grid__item:hover .movie-grid__description{
 bottom: 0;
+}
+.movie-grid__item1:hover .movie-grid__description{
+    bottom: 0;
+}
+.movie-grid__item3:hover .movie-grid__description{
+    bottom: 0;
+}
+.movie-grid__item4:hover .movie-grid__description{
+    bottom: 0;
+}
+.movie-grid__item5:hover .movie-grid__description{
+    bottom: 0;
+}
+.movie-grid__item6:hover .movie-grid__description{
+    bottom: 0;
+}
+.movie-grid__item7:hover .movie-grid__description{
+    bottom: 0;
 }
 .movie-grid__text1{
     font-size: 1.75rem;
